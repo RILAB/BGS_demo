@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: genetics.bst
 Database file #1: example-bibliography.bib
-Warning--I didn't find a database entry for "nordborg"
-You've used 0 entries,
+You've used 3 entries,
             2762 wiz_defined-function locations,
-            608 strings with 4511 characters,
-and the built_in function-call counts, 21 in all, are:
-= -- 0
-> -- 0
+            632 strings with 5174 characters,
+and the built_in function-call counts, 1824 in all, are:
+= -- 156
+> -- 129
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 8
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
++ -- 50
+- -- 36
+* -- 204
+:= -- 310
+add.period$ -- 6
+call.type$ -- 3
+change.case$ -- 27
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 72
+empty$ -- 111
+format.name$ -- 39
+if$ -- 352
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 3
+newline$ -- 12
+num.names$ -- 12
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 24
 quote$ -- 0
-skip$ -- 1
+skip$ -- 47
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 99
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 27
 warning$ -- 0
-while$ -- 0
+while$ -- 13
 width$ -- 0
-write$ -- 2
-(There was 1 warning)
+write$ -- 35

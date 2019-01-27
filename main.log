@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 JAN 2019 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 JAN 2019 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,174 +1712,141 @@ Package pdftex.def Info: cornkey.png used on input line 161.
 
 LaTeX Warning: Reference `supp:models1' on page 3 undefined on input line 178.
 
-<figures/Fig1.pdf, id=39, 361.35pt x 361.35pt>
-File: figures/Fig1.pdf Graphic file (type pdf)
- <use figures/Fig1.pdf>
-Package pdftex.def Info: figures/Fig1.pdf used on input line 196.
-(pdftex.def)             Requested size: 250.14749pt x 250.1478pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 186.
+
+<figures/FigS6.pdf, id=39, 542.025pt x 433.62pt>
+File: figures/FigS6.pdf Graphic file (type pdf)
+ <use figures/FigS6.pdf>
+Package pdftex.def Info: figures/FigS6.pdf used on input line 187.
+(pdftex.def)             Requested size: 250.14749pt x 200.11603pt.
 
 
-Package natbib Warning: Citation `nordborg' on page 3 undefined on input line 2
-02.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 206.
 
-File: cornkey.png Graphic file (type png)
-<use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 252.
-(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [3 <./figures/Fig1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1565) has occurred while \output is active []
-
-File: cornkey.png Graphic file (type png)
-
-<use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 358.
-(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [4]
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
-
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
+<figures/tempF1.png, id=47, 897.3525pt x 462.72874pt>
+File: figures/tempF1.png Graphic file (type png)
+ <use figures/tempF1.png>
+Package pdftex.def Info: figures/tempF1.png used on input line 208.
+(pdftex.def)             Requested size: 250.14749pt x 128.99124pt.
 File: cornkey.png Graphic file (type png)
 
 <use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 517.
+Package pdftex.def Info: cornkey.png used on input line 260.
 (pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [5]
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
-File: cornkey.png Graphic file (type png)
-
-<use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 635.
-(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [6]
-Underfull \vbox (badness 3713) has occurred while \output is active []
-
- (./main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
+ [3 <./figures/FigS6.pdf>]
 File: cornkey.png Graphic file (type png)
  <use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 727.
+Package pdftex.def Info: cornkey.png used on input line 318.
 (pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [7] <figures/FigS1.pdf, id=76, 867.24pt x 382.42876pt>
-File: figures/FigS1.pdf Graphic file (type pdf)
-
-<use figures/FigS1.pdf>
-Package pdftex.def Info: figures/FigS1.pdf used on input line 733.
-(pdftex.def)             Requested size: 419.43759pt x 184.9642pt.
+ [4 <./figures/tempF1.png>]
+Underfull \vbox (badness 3713) has occurred while \output is active []
 
 
-LaTeX Warning: Reference `table:params' on page 8 undefined on input line 739.
+Underfull \vbox (badness 3713) has occurred while \output is active []
 
+File: cornkey.png Graphic file (type png)
 
-! LaTeX Error: \begin{figure*} on input line 732 ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.741 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
+<use cornkey.png>
+Package pdftex.def Info: cornkey.png used on input line 458.
+(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
+ [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: cornkey.png Graphic file (type png)
 
 <use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 743.
+Package pdftex.def Info: cornkey.png used on input line 615.
+(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
+ [6]
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+ (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: cornkey.png Graphic file (type png)
+
+<use cornkey.png>
+Package pdftex.def Info: cornkey.png used on input line 8.
+(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
+ [7])
+File: cornkey.png Graphic file (type png)
+ <use cornkey.png>
+Package pdftex.def Info: cornkey.png used on input line 707.
 (pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
  [8
 
- <./figures/FigS1.pdf>]
-<figures/FigS2.pdf, id=88, 867.24pt x 382.42876pt>
-File: figures/FigS2.pdf Graphic file (type pdf)
- <use figures/FigS2.pdf>
-Package pdftex.def Info: figures/FigS2.pdf used on input line 745.
+]
+<figures/FigS1.pdf, id=114, 867.24pt x 382.42876pt>
+File: figures/FigS1.pdf Graphic file (type pdf)
+ <use figures/FigS1.pdf>
+Package pdftex.def Info: figures/FigS1.pdf used on input line 713.
 (pdftex.def)             Requested size: 419.43759pt x 184.9642pt.
 
 
-LaTeX Warning: Reference `table:params' on page 9 undefined on input line 750.
+LaTeX Warning: Reference `table:params' on page 9 undefined on input line 719.
 
 
-! LaTeX Error: \begin{figure} on input line 744 ended by \end{figure*}.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.752 \end{figure*}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+File: cornkey.png Graphic file (type png)
 
-<figures/FigS21.pdf, id=89, 650.43pt x 289.08pt>
+<use cornkey.png>
+Package pdftex.def Info: cornkey.png used on input line 723.
+(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
+ [9
+
+ <./figures/FigS1.pdf>]
+<figures/FigS2.pdf, id=126, 867.24pt x 382.42876pt>
+File: figures/FigS2.pdf Graphic file (type pdf)
+ <use figures/FigS2.pdf>
+Package pdftex.def Info: figures/FigS2.pdf used on input line 725.
+(pdftex.def)             Requested size: 419.43759pt x 184.9642pt.
+
+
+LaTeX Warning: Reference `table:params' on page 10 undefined on input line 730.
+
+
+<figures/FigS21.pdf, id=127, 650.43pt x 289.08pt>
 File: figures/FigS21.pdf Graphic file (type pdf)
  <use figures/FigS21.pdf>
-Package pdftex.def Info: figures/FigS21.pdf used on input line 756.
+Package pdftex.def Info: figures/FigS21.pdf used on input line 736.
 (pdftex.def)             Requested size: 471.86229pt x 209.72098pt.
-
-<figures/FigS6.pdf, id=90, 542.025pt x 433.62pt>
-File: figures/FigS6.pdf Graphic file (type pdf)
- <use figures/FigS6.pdf>
-Package pdftex.def Info: figures/FigS6.pdf used on input line 765.
-(pdftex.def)             Requested size: 471.86229pt x 377.5044pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package caption Warning: Unused \captionsetup[table] on input line 115.
 See the caption package documentation for explanation.
 
 
-Package natbib Warning: There were undefined citations.
-
-
 AED: lastpage setting LastPage
 File: cornkey.png Graphic file (type png)
 <use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 847.
+Package pdftex.def Info: cornkey.png used on input line 815.
 (pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [9 <./figures/FigS2.pdf> <./figures/FigS21.pdf>]
-File: cornkey.png Graphic file (type png)
-
-<use cornkey.png>
-Package pdftex.def Info: cornkey.png used on input line 847.
-(pdftex.def)             Requested size: 14.22636pt x 13.2726pt.
- [10 <./figures/FigS6.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
+ [10 <./figures/FigS2.pdf> <./figures/FigS21.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 815.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 815.
  ) 
 Here is how much of TeX's memory you used:
- 24941 strings out of 493089
- 438683 string characters out of 6134842
- 585745 words of memory out of 5000000
- 27579 multiletter control sequences out of 15000+600000
- 86068 words of font info for 296 fonts, out of 8000000 for 9000
+ 24955 strings out of 493089
+ 439010 string characters out of 6134842
+ 584679 words of memory out of 5000000
+ 27587 multiletter control sequences out of 15000+600000
+ 86235 words of font info for 298 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,94p,1911b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,94p,1911b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1896,10 +1863,10 @@ type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/pala
 tino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino/up
 lri8a.pfb>
-Output written on main.pdf (10 pages, 459034 bytes).
+Output written on main.pdf (10 pages, 571227 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  56875 words of extra memory for PDF output out of 61914 (max. 10000000)
 

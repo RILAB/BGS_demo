@@ -1,3 +1,20 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{3}
+
+\bibitem[{Beissinger {\em et~al.\/}}(2016){Beissinger, Wang, Crosby, Durvasula,
+  Hufford, {\rm and} Ross-Ibarra}]{beissinger2016recent}
+{Beissinger, T.~M., L.~Wang, K.~Crosby, A.~Durvasula, M.~B. Hufford, {\em
+  et~al.\/}}, 2016 Recent demography drives changes in linked selection across
+  the maize genome. Nature plants {\bf 2}: 16084.
+
+\bibitem[{Nordborg {\em et~al.\/}}(1996){Nordborg, Charlesworth, {\rm and}
+  Charlesworth}]{nordborg1996effect}
+{Nordborg, M., B.~Charlesworth, {\rm and} D.~Charlesworth}, 1996 The effect of
+  recombination on background selection. Genetics Research {\bf 67}: 159--174.
+
+\bibitem[{Torres {\em et~al.\/}}(2018){Torres, Szpiech, {\rm and}
+  Hernandez}]{torres2018human}
+{Torres, R., Z.~A. Szpiech, {\rm and} R.~D. Hernandez}, 2018 Human demographic
+  history has amplified the effects of background selection across the genome.
+  PLoS genetics {\bf 14}: e1007387.
 
 \end{thebibliography}

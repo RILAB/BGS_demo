@@ -470,9 +470,12 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT figures/Fig1.pdf
-INPUT ./figures/Fig1.pdf
-INPUT ./figures/Fig1.pdf
+INPUT figures/FigS6.pdf
+INPUT ./figures/FigS6.pdf
+INPUT ./figures/FigS6.pdf
+INPUT figures/tempF1.png
+INPUT ./figures/tempF1.png
+INPUT ./figures/tempF1.png
 INPUT cornkey.png
 INPUT ./cornkey.png
 INPUT cornkey.png
@@ -483,6 +486,8 @@ INPUT cornkey.png
 INPUT ./cornkey.png
 INPUT main.bbl
 INPUT main.bbl
+INPUT cornkey.png
+INPUT ./cornkey.png
 INPUT cornkey.png
 INPUT ./cornkey.png
 INPUT figures/FigS1.pdf
@@ -496,11 +501,6 @@ INPUT ./figures/FigS2.pdf
 INPUT figures/FigS21.pdf
 INPUT ./figures/FigS21.pdf
 INPUT ./figures/FigS21.pdf
-INPUT figures/FigS6.pdf
-INPUT ./figures/FigS6.pdf
-INPUT ./figures/FigS6.pdf
-INPUT cornkey.png
-INPUT ./cornkey.png
 INPUT cornkey.png
 INPUT ./cornkey.png
 INPUT main.aux
