@@ -1,10 +1,15 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 
 \bibitem[{Beissinger {\em et~al.\/}}(2016){Beissinger, Wang, Crosby, Durvasula,
   Hufford, {\rm and} Ross-Ibarra}]{beissinger2016recent}
 {Beissinger, T.~M., L.~Wang, K.~Crosby, A.~Durvasula, M.~B. Hufford, {\em
   et~al.\/}}, 2016 Recent demography drives changes in linked selection across
   the maize genome. Nature plants {\bf 2}: 16084.
+
+\bibitem[{Comeron}(2017)]{comeron2017background}
+{Comeron, J.~M.}, 2017 Background selection as null hypothesis in population
+  genomics: insights and challenges from drosophila studies. Phil. Trans. R.
+  Soc. B {\bf 372}: 20160471.
 
 \bibitem[{Nordborg {\em et~al.\/}}(1996){Nordborg, Charlesworth, {\rm and}
   Charlesworth}]{nordborg1996effect}

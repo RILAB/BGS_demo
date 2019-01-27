@@ -3,7 +3,7 @@
 \setlength{\marginparwidth}{2cm}
 \usepackage[textsize=tiny,colorinlistoftodos]{todonotes} % comments in margins
 \definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
-\usepackage{blindtext}
+\usepackage{multicol}
 
 
 %%%%%%%Add comments in color
@@ -25,16 +25,15 @@
 
 
 \usepackage{hyperref}
-\usepackage{multicol}
 
 \title{Timing is key in determining the impacts of demography on linked selection}
 
-\author[$\dagger$,1]{Raul Torres}
+\author[$\dagger$,]{Raul Torres}
 \author[$\ast$]{Markus Stetter}
 \author[$\dagger$,1]{Ryan HernandeZ}
 \author[$\ast$,$\ddagger$,1]{Jeffrey Ross-Ibarra}
 
-
+\affil[$\dagger$]{Some other Department, Some other place, CA, USA}
 \affil[$\ast$]{Dept. of Plant Sciences and Center for Population Biology, University of California, Davis, CA, USA}
 \affil[$\dagger$]{Some other Department, Some other place, CA, USA}
 \affil[$\ddagger$]{Genome Center, University of California, Davis, CA, USA}
@@ -42,7 +41,7 @@
 
 \keywords{Keyword one, keyword 2}
 
-\runningtitle{Running title} % For use in the footer
+\runningtitle{Demography and background selection} % For use in the footer
 
 %% For the footnote.
 %% Give the last name of the first author if only one author;
@@ -50,27 +49,31 @@
 %% last names of both authors if there are two authors;
 % \runningauthor{FirstAuthorLastname and SecondAuthorLastname}
 %% last name of the first author followed by et al, if more than two authors.
-\runningauthor{One \textit{et al.}}
+\runningauthor{Torres, Stetter \textit{et al.}}
 
 
 %%% Abstract %%%%%%%%%%%%%%%%%%
 \begin{abstract}
-Neutral genetic diversity across the genome is determined by the complex interplay of mutation, demographic history, and natural selection. While the direct action of natural selection is limited to functional loci across the genome, its impact can have effects on nearby neutral loci due to genetic linkage. These effects of selection at linked sites, referred to as genetic hitchhiking and background selection (BGS), are pervasive across natural populations. However, only recently has there been a focus on the joint consequences of demography and selection at linked sites on perturbing the patterns of neutral genetic diversity. Two recent studies investigating the impact of demography on BGS in the context of maize and humans found seemingly contradictory results. In order to reconcile differences observed in these studies, we conducted an extensive forward simulation study of BGS under a range of demographic models including population contractions, expansions, and bottleneck-expansion models of varying magnitudes and lengths of time. In each simulation, we measured relative neutral genetic diversity ($\pi$) and relative singleton density ($\xi$) over time as the population size changes. We found that both statistics vary dynamically over time, and that the initial dynamics after a population size change are often in the opposite direction of the long-term expected trajectory. Using these simulations and analytical calculations, we describe the temporal dynamics of neutral diversity in the context of selection at linked sites in populations of changing size and suggest a reconciliation of previously contradicting studies. Our work provides new intuition about why patterns of diversity under BGS vary through time as a function of demography and illustrates that classical models of BGS are poorly suited for predicting such patterns in the context of dynamic populations.
+Neutral genetic diversity across the genome is determined by the complex interplay of mutation, demographic history, and natural selection. While the direct action of natural selection is limited to functional loci across the genome, its impact can have effects on nearby neutral loci due to genetic linkage. These effects of selection at linked sites, referred to as genetic hitchhiking and background selection (BGS), are pervasive across natural populations. However, only recently has there been a focus on the joint consequences of demography and selection at linked sites, and empirical studies have sometimes come to apparantly contradictory conclusions. In order to understand the relationship between demography and linked selection, we conducted an extensive forward simulation study of BGS under a range of demographic models. We found that levels of diversity compared to an equilibrium population vary  over time, and that the initial dynamics after a population size change are often in the opposite direction of the long-term expected trajectory. Our detailed observations of the temporal dynamics of neutral diversity in the context of selection at linked sites in nonequilibrium populations provides new intuition about why patterns of diversity under BGS vary through time in natural populations and helps reconcile previously contradictory observations.
+Most notably, our results highlight that classical models of BGS are poorly suited for predicting diversity in nonequilibrium populations.
 \end{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\setboolean{displaycopyright}{true}
+\setboolean{displaycopyright}{false}
 
 \begin{document}
-
+\begin{multicols}{1}
 \maketitle
+\end{multicols}
 \thispagestyle{firststyle}
 %\firstpagefootnote
 \correspondingauthoraffiliation{
 Dept. of Plant Sciences, University of California, Davis, CA, USA
-E-mail: corresponding@ucdavis.edu}
+E-mail: rossibarra@ucdavis.edu \\
+Genome Quebec Innovation Center, McGill University, Montreal, Canada
+E-mail: ryan@McGill.edu}
 \vspace{-11pt}%
+
 
 \section{Introduction}
 \lettrine[lines=2]{\color{color2}T}{}
@@ -103,12 +106,12 @@ Many models of selection at linked sites were also formulated with the assumptio
 However, non-equilibrium demographic change may break such assumptions and forces other than selection may drive patterns of variation in regions experiencing selection at linked sites.
 For example, during the course of a population bottleneck, genetic drift may transiently dominate the effects of selection at many sites such that traditional models of selection will poorly predict patterns of genetic diversity.
 But linked selection may also exacerbate the impact of genetic drift, resulting in even greater losses than expected by the action of demography alone.
-A recent review by Comeron et al. 2017 [50] included a cursory investigation into the impact of demography on diversity in regions under BGS and suggested a dependency on demographic history.
-Recent empirical work in maize and humans has also demonstrated a strong interaction between demography and selection at linked sites [20,51].
-But these papers also demonstrates the need for a deeper understanding of the interaction between demography and selection at linked sites, as the two studies come to opposing conclusions about the impact of population bottlenecks and expansion on patterns of diversity  in regions affected by selection at linked sites.
+A recent review by \citet{comeron2017background}  included a cursory investigation into the impact of demography on diversity in regions under BGS and suggested a dependency on demographic history.
+Recent empirical work in maize and humans has also demonstrated a strong interaction between demography and selection at linked sites \citep{beissinger2016recent,torres2018human}.
+But these papers also demonstrate the need for a deeper understanding of the interaction between demography and selection at linked sites, as the two studies come to opposing conclusions about the impact of population bottlenecks and expansion on patterns of diversity  in regions affected by selection at linked sites.
 
 In order to more fully explore the joint consequences of demography and selection at linked sites, in this study we conducted extensive simulations of different demographic models jointly with the effects of BGS.
-We find that the time span removed from demographic events is critical for populations experiencing non-equilibrium demography and can yield contrasting patterns of diversity that reconciles apparently contradicting results from maize and humans  [20,51].
+We find that the time span removed from demographic events is critical for populations experiencing non-equilibrium demography and can yield contrasting patterns of diversity that reconciles apparently contradicting results  \citep{beissinger2016recent,torres2018human}.
 Additionally, the sensitivity of genetic diversity to demography is dependent on the frequency of the alleles being measured, with rare variants experiencing more dynamic changes through time.
 
 Our results demonstrate that traditional models of selection at linked sites may be poorly suited for predicting patterns of diversity for populations experiencing recent demographic change, and that the predicted forces of BGS become apparent only after populations begin to approach equilibrium.
@@ -143,7 +146,7 @@ We conducted 10,000 bootstrap iterations and generated confidence intervals from
 
 \subsection{Calculations of expected BGS}
 
-To calculate the predicted \jri{can we say instantaneuos?} $\pi/\pi_0$ given the specific $N_e$ at each time point for each demographic model, we used equation 14 of Nordborg et al. 1996 [7], but modified it accordingly to incorporate two gamma distributions of fitness effects.
+To calculate the predicted \jri{can we say instantaneuos?} $\pi/\pi_0$ given the specific $N_e$ at each time point for each demographic model, we used equation 14 of \citet{nordborg1996effect}, but modified it accordingly to incorporate two gamma distributions of fitness effects.
 Additionally, in order to properly model our simulations, we only calculated the effects of BGS on one side of the selected locus.
 This resulted in the following modified equation:
 
@@ -172,7 +175,6 @@ While this value provides a coarse estimate for the effects of BGS on $\pi/\pi_0
 \section{Results}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \subsection{Background selection under instantaneous population size change}
 
 We first present the joint effects of demography and bacgkround selection (hereafter, BGS) under simple demographic models with a single instantaneous change in size (models 2-4; Figure \ref{supp:models1}).
@@ -180,8 +182,8 @@ While our simulation model incorporated a 200 kb neutral region, we first focuse
 Doing so allowed us to observe any change in the dynamics of $\pi$ and $\xi$ as they approached new population
 equilibria resulting from a change in size.
 In the simple bottleneck models (models 2-3) we observed the expected strong decrease in $\xi$ and $\pi$ following  population contraction in both models of BGS and neutrality (Figure \ref{fig:S6}).
-Similarly, we observed the expected rapid increase in $\xi$ compared to $\pi$ in our model of a simple population expansion (model 4; Figure \ref{fig:S6}). \jri{could probably ditch the legend inset here since the caption provides colors}
-In all cases, values of $\xi$ and $\pi$ were consistently lower in models with BGS, consistent with the known effects of BGS on diversity \citep{nordborg1996effect}.
+Similarly, we observed the expected rapid increase in $\xi$ compared to $\pi$ in our model of a simple population expansion (model 4; Figure \ref{fig:S6}). \jri{ here i think we want an inset on $\xi$ for model 4 too. could probably ditch the legend inset here since the caption provides colors in this and similar figures.}
+In all cases, while value of $\xi$ and $\pi$ were lower in models with BGS, diversity values also changed more rapidly than in the neutral case (Figure \ref{fig:S9}).
 
 \begin{figure}[]
 \includegraphics[width=\linewidth]{figures/FigS6.pdf}
@@ -194,112 +196,36 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \end{figure}
 
 To examine the interaction of demography and selection observed in empirical data \citep{beissinger2016recent,torres2018human}, we normalize $\pi$ and $\xi$ in models of BGS by their equivalent statistics generated under the same demographic model in the absence of any selection ($\pi_0$ and $\xi_0$).
-We observed that $\pi/\pi_0$ and $\xi/\xi_0$ were dynamic through time in response to demography, with changes occurring to both their magnitude and direction (Figure \ref{fig:1}).
+We observed that $\pi/\pi_0$ and $\xi/\xi_0$ were dynamic through time in response to demography, with changes occurring to both their magnitude and direction (Figure \ref{fig:1}). \jri{i like having 2-4 together, and hacked together a crappy version of what i think this could look like. Raul can you take a stab at making something like this?}
 Moreover, changes to $\xi/\xi_0$ occurred more rapidly through time when compared to $\pi/\pi_0$.
-For example, in model 2 we observed a dip and rise in the $\xi/\xi_0$ statistic (i.e., relative to model equilibrium model 1) within the first $\approx 0.1 N_{anc}$ generations ($N_{anc}$ refers to the $N_e$ of the population in the ancestral generation of the model).
+For example, in model 2 we observed a dip and rise in the $\xi/\xi_0$ statistic relative to the equilibrium model 1 within the first $\approx 0.1N_{anc}$ generations ($N_{anc}$ refers to the $N_e$ of the ancestral population prior to any demographic change).
 Yet, for the same model, $\pi/\pi_0$ remained depressed for over $0.5N_{anc}$ generations (Figure \ref{fig:1}).
-Similar patterns were observed for model 3, which experienced a greater reduction in size, although this pattern is less clear due to the greater sampling variance exhibited between successive time points for the $\xi/\xi_0$ statistic.
-This increased variance may stem from the fact that rare variants are especially sensitive to loss during a
-population reduction [9] and fewer number of them remain in the population following the size change (Figure \ref{fig:S6}).
-However, as expected for a population suffering a smaller reduction, lower sampling variance for $\xi/\xi_0$ was observed across each successive time point in model 2. \jri{is this sentence necessary?}
+Similar patterns were observed for model 3, which experienced a greater reduction in size, although the pattern is less clear due to the greater sampling variance of $\xi/\xi_0$ due to the overall lower number of singletons.
+In both models, both $\pi/\pi_0$ and $\xi/\xi_0$ appeared to plateau at levels above that of model the equilibrium model 1.
+Under a model of simple population expansion (model 4) we observed markedly different dynamics, with a sustained increase in $\pi/\pi_0$ but only a transient increase in $\xi/\xi_0$ within the first $\approx 0.1N_{anc}$, followed by a reduction to levels below that of the equilibrium model.
 
 \begin{figure}[]
-%  \begin{center}
 \includegraphics[width=\linewidth]{figures/tempF1.png}
 \caption{Relative singleton density ($\xi/\xi_0$) and relative diversity ($\pi/\pi_0$) across time for demographic models 1-4.
-Top panel shows each demographic model (time proceeds forward from left to right, scaled by the Ne of the population at the initial generation ($_{Nanc}$)).
+The top panel shows each demographic model as in Figure \ref{fig:1}.
 Black lines show $\xi/\xi_0$ and $\pi/\pi_0$ from simulations of a constant sized population (model 1).
-Dotted lines in the bottom panel show the instantaneous expectation of $\pi/\pi_0$ from Eq. (14) of \citet{nordborg1996effect} given the specific selection parameters and the instantaneous $N_e$ at each time point.
-See Table 1 for demographic model parameters.
+Dotted lines in the bottom panel show the instantaneous expectation of $\pi/\pi_0$ from  \citet{nordborg1996effect} given the specific selection parameters and the instantaneous $N_e$ at each time point.
 Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulation data.}
 \label{fig:1}
-%\end{center}
 \end{figure}
 
-
- However, when we observed the relative
-increase of $\xi$ and $\pi$ under BGS versus neutrality by measuring
-$\xi/\xi_0$ and $\pi/\pi_0$, we saw that the increase
-for $\xi$ and $\pi$ occurred at a greater rate under BGS (Figure 2). Thus, the
-patterns of $\xi/\xi_0$ and $\pi/\pi_0$ that
-manifested occurred in opposite directions from what we observed in
-demographic models with a population contraction -- namely a transient
-increase in $\xi/\xi_0$ and a sustained increase in
-$\pi/\pi_0$. The latter pattern occurred despite the
-expectation of a decrease in $\pi/\pi_0$ from the Nordborg
-model, which would have been generated by more efficient purifying
-selection accompanying a larger $N_e$.
-
-The more sensitive and rapid response to population increase under BGS
-recapitulated the faster approaches to equilibrium that were exhibited
-in the contraction models. Intuitively, these faster approaches to new
-equilibrium levels under BGS in response to size changes make sense if
-we consider the fact that the distance between initial and final
-equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another
-under BGS when compared to neutrality (Figure S6; Table 2-3). This
-provided a potential explanation for why we observed the specific
-dynamics of $\pi/\pi_0$ immediately following a size change.
-This argument likely does not hold for model 4 because, due to its
-higher $N_e$, it is unlikely that equilibrium has
-yet been reached. However, the observation of an increase in
-$\pi/\pi_0$ for model 4 did provide supporting evidence that a
-faster approach to equilibrium under BGS still existed under an
-expansion model. Indeed, moderl 4 $\pi$ under BGS changed more quickly than
-under neutrality (Figure S9). Presumably, this also indicates that $\pi$
-under BGS will reach a new equilibrium first, at which point
-$\pi/\pi_0$ will begin a downward trajectory in response to $\pi$
-continuing to increase under neutrality but $\pi$ under BGS remaining at a
-constant equilibrium. This is a likely outcome if the qualitative
-changes in $\xi/\xi_0$ foreshadow the future dynamics of
-$\pi/\pi_0$. The end result would also include a decrease in
-$\pi/\pi_0$ relative to its initial starting point, with
-$\pi/\pi_0$ eventually reaching a value close to its
-expectation (Figure 2; dotted lines). Although we foresee no reason why
-this prediction should not hold true, more extensive simulations will be
-necessary to confirm this.
-
-
 Changes in population size should lead to changes in the rate of genetic drift and the efficacy of natural selection and, thus, changes in the magnitude of BGS across time.
-Indeed, in equilibrium contions, the classic model of BGS \citep{nordborg1996effect} predicts that smaller populations will experience weaker BGS (with higher $\pi/\pi_0$ and $\xi/\xi_0$).
-To compare these prediction to those of our simple o test for this type of outcome, we calculated the predicted $\pi/\pi_0$ given the specific $N_e$ at each time point using the BGS model of (we will refer to this as the classic model; see Materials and Methods).
-When comparing the expectation of $\pi/\pi_0$ from the classic model with our simulation data, we observed qualitatively opposite patterns (Figure \ref{fig:1}; bottom panel).
-In both models 2 and 3, the Nordborg model predicted a higher value for $\pi/\pi_0$ immediately following the population contraction, which was in contrast to the observed transient drop in $\pi/\pi_0$ for both models.
-While the effects of BGS should be attenuated in populations with lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
-Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
-These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
-The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], which has been observed to increase sensitivity to drift for populations experiencing recent bottlenecks [51] (though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]).
-These patterns were made evident when observing the more rapid relative decrease in diversity in our selection models with BGS versus neutrality.
-When compared to their initial equilibrium starting points, $\pi$ under BGS suffered faster rates of loss compared to the neutral case for both models (Figure S9), with the fastest rates of loss accompanying larger reductions in $N_e$ (i.e., model 3).
-Importantly, these results demonstrated that classical models that predict the impact of BGS on $\pi/\pi_0$, such as the Nordborg model, implicitly assume an equilibrium population at  mutation-selection balance [58] and are inappropriate for predicting true patterns of genetic diversity for populations that have udnergone recent size changes.
-
-Even though $\xi/\xi_0$ and $\pi/\pi_0$ experienced
-drops immediately in response to the population reductions of models 2
-and 3, these patterns of reduced $\xi/\xi_0$ and
-$\pi/\pi_0$ reversed themselves through time and, in the case
-of $\pi/\pi_0$, approached the expectation predicted by the
-Nordborg model. These dynamics occurred more quickly for
-$\xi/\xi_0$, which was expected since approaches to equilibrium
-are more rapid for rare variants relative to common variants.
-Additionally, the approaches to equilibrium occurred fastest for model
-3, which also suffered the larger population size reduction (Figure 1).
-This faster approach was also not unexpected since, in general, the time
-to equilibrium is scaled by $N_e$ [28,58] and
-changes resulting in smaller $N_e$ (e.g., model 3)
-should also result in shorter times towards new population equilibria.
-Thus, despite the demographic change resulting in immediate decreases to
-$\xi/\xi_0$ and $\pi/\pi_0$, patterns of relative
-diversity in populations suffering a contraction eventually approached
-their expected higher equilibrium values under weakened BGS, with rates
-dependent on the frequency of the alleles being observed and the
-magnitude of the population reduction. This was evident from the fact
-that the final $\pi/\pi_0$ values for models 2 and 3 were
-within close approximation of the Nordborg model. However, we note that
-this expectation underestimated $\pi/\pi_0$ for model 3 because
-the threshold of $s < 0.15/2N_e$
-was likely not conservative enough to ignore deleterious mutations that
-behave neutrally under the low $N_e$ size of 400 for
-that model.
-
+Indeed, under equilibrium contions, the classic model of BGS \citep{nordborg1996effect} predicts weaker BGS (with higher $\pi/\pi_0$) for smaller populations and stronger BGS (with lower $\pi/\pi_0$) for larger populations.
+To compare these prediction to those of our simple demographic models, we calculated the predicted $\pi/\pi_0$ under the classic mdoel given the instantaneous $N_e$ at each time point.
+In all three simple demographic models, however, the short-term predictions of $\pi/\pi_0$ from the classic model are qualitatively opposite those observed (Figure \ref{fig:1}; bottom panel).
+The classic model predicted a higher value for $\pi/\pi_0$ immediately following a population contraction, yet we observed a transient drop in $\pi/\pi_0$ after a bottleneck (models 2 and 3).
+Similarly, while the classic model predicts a decrease in $\pi/\pi_0$ in larger populations, we observed a sustained increase in $\pi/\pi_0$ with population expansion (model 4) extending over the entire $N_{anc}$ generations of the simulation.
+% Even though $\xi/\xi_0$ and $\pi/\pi_0$ experienced
+% drops immediately in response to the population reductions of models 2
+% and 3, these patterns of reduced $\xi/\xi_0$ and
+% $\pi/\pi_0$ reversed themselves through time and, in the case
+% of $\pi/\pi_0$, approached the expectation predicted by the
+% Nordborg model.
 
 
 \subsection{Simulations of BGS and demography -- bottleneck-expansion models}
@@ -572,11 +498,77 @@ differing magnitudes of BGS. However, more extensive simulations may
 help to uncover such patterns.
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\jri{behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models}
+\jri{models2-3}
+While the effects of BGS should be attenuated in populations with lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
+Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
+These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
+The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], which has been observed to increase sensitivity to drift for populations experiencing recent bottlenecks [51] (though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]).
+These patterns were made evident when observing the more rapid relative decrease in diversity in our selection models with BGS versus neutrality.
+% When compared to their initial equilibrium starting points, $\pi$ under BGS suffered faster rates of loss compared to the neutral case for both models (Figure S9), with the fastest rates of loss accompanying larger reductions in $N_e$ (i.e., model 3).
+Importantly, these results demonstrated that classical models that predict the impact of BGS on $\pi/\pi_0$, such as the Nordborg model, implicitly assume an equilibrium population at  mutation-selection balance [58] and are inappropriate for predicting true patterns of genetic diversity for populations that have udnergone recent size changes.
+
+ These dynamics occurred more quickly for
+$\xi/\xi_0$, which was expected since approaches to equilibrium
+are more rapid for rare variants relative to common variants.
+Additionally, the approaches to equilibrium occurred fastest for model
+3, which also suffered the larger population size reduction (Figure 1).
+This faster approach was also not unexpected since, in general, the time
+to equilibrium is scaled by $N_e$ [28,58] and
+changes resulting in smaller $N_e$ (e.g., model 3)
+should also result in shorter times towards new population equilibria.
+Thus, despite the demographic change resulting in immediate decreases to
+$\xi/\xi_0$ and $\pi/\pi_0$, patterns of relative
+diversity in populations suffering a contraction eventually approached
+their expected higher equilibrium values under weakened BGS, with rates
+dependent on the frequency of the alleles being observed and the
+magnitude of the population reduction. This was evident from the fact
+that the final $\pi/\pi_0$ values for models 2 and 3 were
+within close approximation of the Nordborg model. However, we note that
+this expectation underestimated $\pi/\pi_0$ for model 3 because
+the threshold of $s < 0.15/2N_e$
+was likely not conservative enough to ignore deleterious mutations that
+behave neutrally under the low $N_e$ size of 400 for
+that model.
+
+
+\jri{model4}:
+The latter pattern occurred despite the
+expectation of a decrease in $\pi/\pi_0$ from the Nordborg
+model, which would have been generated by more efficient purifying
+selection accompanying a larger $N_e$.
+
+The more sensitive and rapid response to population increase under BGS
+recapitulated the faster approaches to equilibrium that were exhibited
+in the contraction models. Intuitively, these faster approaches to new
+equilibrium levels under BGS in response to size changes make sense if
+we consider the fact that the distance between initial and final
+equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another
+under BGS when compared to neutrality (Figure S6; Table 2-3). This
+provided a potential explanation for why we observed the specific
+dynamics of $\pi/\pi_0$ immediately following a size change.
+This argument likely does not hold for model 4 because, due to its
+higher $N_e$, it is unlikely that equilibrium has
+yet been reached. However, the observation of an increase in
+$\pi/\pi_0$ for model 4 did provide supporting evidence that a
+faster approach to equilibrium under BGS still existed under an
+expansion model. Indeed, moderl 4 $\pi$ under BGS changed more quickly than
+under neutrality (Figure S9). Presumably, this also indicates that $\pi$
+under BGS will reach a new equilibrium first, at which point
+$\pi/\pi_0$ will begin a downward trajectory in response to $\pi$
+continuing to increase under neutrality but $\pi$ under BGS remaining at a
+constant equilibrium. This is a likely outcome if the qualitative
+changes in $\xi/\xi_0$ foreshadow the future dynamics of
+$\pi/\pi_0$. The end result would also include a decrease in
+$\pi/\pi_0$ relative to its initial starting point, with
+$\pi/\pi_0$ eventually reaching a value close to its
+expectation (Figure 2; dotted lines). Although we foresee no reason why
+this prediction should not hold true, more extensive simulations will be
+necessary to confirm this.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
@@ -712,7 +704,7 @@ depending on the recent demographic history of the population.
 \begin{figure*}[h!]
 \includegraphics[width=0.8\linewidth]{figures/FigS1.pdf}
 \caption{Demographic models 1-4 simulated in our study.
-Time proceeds forward from left to right and is scaled by the $N_e$ of the population at the initial generation ($N_anc$; 20,000 individuals).
+Time proceeds forward from left to right and is scaled by the $N_e$ of the population at the initial generation ($N_{anc}$; 20,000 individuals).
 Demographic model 2 experiences a population contraction to 2000 individuals while demographic model 3 experiences a population contraction to 400 individuals.
 Demographic model 4 experiences a population expansion to 40,000 individuals.
 All population size changes are instantaneous for models 2-4.
@@ -724,7 +716,7 @@ See Table \ref{table:params} for additional model parameters.}
 \begin{figure*}[t]
 \includegraphics[width=0.8\linewidth]{figures/FigS2.pdf}
 \caption{Demographic models 1 and 5-12 simulated in our study.
-Time proceeds forward from left to right and is scaled by the $N_e$ of the population at the initial generation ($N_anc$; 20,000 individuals).
+Time proceeds forward from left to right and is scaled by the $N_e$ of the population at the initial generation ($N_{anc}$; 20,000 individuals).
 Demographic models experiencing a shallow bottleneck (models 5, 7, 9, and 11) experience a population contraction to 2000 individuals while demographic models experiencing a deep bottleneck (models 6, 8, 10, and 12) experience a population contraction to 400 individuals.
 After contraction, demographic models 5-12 undergo exponential growth to a final population size of 200,000 individuals.
 See Table \ref{table:params} for additional model parameters.}
@@ -741,6 +733,16 @@ Black stars represent the observed $\pi\pi_0$ from running simulations of BGS.}
 \end{figure*}
 \pagebreak
 
+\begin{figure*}[t]
+\includegraphics[width=.9\linewidth]{figures/FigS9.pdf}
+\caption{Singleton density ($\xi$) and diversity ($\pi$) for demographic models 2-4 under neutrality (orange lines) and BGS (violet lines) relative to their values in the initial generation prior to demographic change.
+The top panel shows each demographic model as in Figure \ref{fig:1}.
+For greater detail, insets show data for generations over a smaller time scale and smaller y-axis (note: y-axes for insets are scaled linearly).
+Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulation data.
+The data used for this figure is identical to that of Figure \ref{fig:1}.}
+\label{fig:S9}
+\end{figure*}
+\pagebreak
 
 
 % \begin{table*}[htbp]
