@@ -30,7 +30,7 @@
 
 \author[$\dagger$,]{Raul Torres}
 \author[$\ast$]{Markus Stetter}
-\author[$\dagger$,1]{Ryan HernandeZ}
+\author[$\dagger$,1]{Ryan Hernandez}
 \author[$\ast$,$\ddagger$,1]{Jeffrey Ross-Ibarra}
 
 \affil[$\dagger$]{Some other Department, Some other place, CA, USA}
@@ -54,7 +54,7 @@
 
 %%% Abstract %%%%%%%%%%%%%%%%%%
 \begin{abstract}
-Neutral genetic diversity across the genome is determined by the complex interplay of mutation, demographic history, and natural selection. While the direct action of natural selection is limited to functional loci across the genome, its impact can have effects on nearby neutral loci due to genetic linkage. These effects of selection at linked sites, referred to as genetic hitchhiking and background selection (BGS), are pervasive across natural populations. However, only recently has there been a focus on the joint consequences of demography and selection at linked sites, and empirical studies have sometimes come to apparantly contradictory conclusions. In order to understand the relationship between demography and linked selection, we conducted an extensive forward simulation study of BGS under a range of demographic models. We found that levels of diversity compared to an equilibrium population vary  over time, and that the initial dynamics after a population size change are often in the opposite direction of the long-term expected trajectory. Our detailed observations of the temporal dynamics of neutral diversity in the context of selection at linked sites in nonequilibrium populations provides new intuition about why patterns of diversity under BGS vary through time in natural populations and helps reconcile previously contradictory observations.
+Neutral genetic diversity across the genome is determined by the complex interplay of mutation, demographic history, and natural selection. While the direct action of natural selection is limited to functional loci across the genome, its impact can have effects on nearby neutral loci due to genetic linkage. These effects of selection at linked sites, referred to as genetic hitchhiking and background selection (BGS), are pervasive across natural populations. However, only recently has there been a focus on the joint consequences of demography and selection at linked sites, and empirical studies have sometimes come to apparently contradictory conclusions. In order to understand the relationship between demography and linked selection, we conducted an extensive forward simulation study of BGS under a range of demographic models. We found that levels of diversity compared to an equilibrium population vary  over time, and that the initial dynamics after a population size change are often in the opposite direction of the long-term expected trajectory. Our detailed observations of the temporal dynamics of neutral diversity in the context of selection at linked sites in nonequilibrium populations provides new intuition about why patterns of diversity under BGS vary through time in natural populations and helps reconcile previously contradictory observations.
 Most notably, our results highlight that classical models of BGS are poorly suited for predicting diversity in nonequilibrium populations.
 \end{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,18 +79,18 @@ E-mail: ryan@McGill.edu}
 \lettrine[lines=2]{\color{color2}T}{}
 he effects of natural selection and demography on neutral genetic diversity within populations have long been of interest in evolutionary and population genetics.
 Recent efforts in sequencing tens of thousands of genomes across a multitude of species have yielded new and valuable insights into how these two forces of evolution have shaped extant patterns of genomic variation.
-Yet, while the theoretical underpinnings of the effects of natural selection and demography on genetic diversity have been investigated for decades [1–9], detailed investigation into how they jointly act to create patterns of diversity in different populations remains lacking.
+Yet, while the theoretical underpinnings of the effects of natural selection and demography on genetic diversity have been investigated for decades \citep{smith1974hitch, nei1975bottleneck, maruyama1984population, maruyama1985population, kaplan1989hitchhiking, charlesworth1993effect, nordborg1996effect, hudson1995deleterious, tajima1989effect}, detailed investigation into how they jointly act to create patterns of diversity in different populations remains lacking.
 
-Both theory and empirical observation have long shown that patterns of neutral genetic variation can vary regionally across the genome as a function of recombination rate [1,10].
-This is because natural selection operating on selected sites not only decreases genetic variation at the focal site but can also lead to decreases in nearby neutral genetic diversity due to genetic linkage [11].
-These effects, known as genetic hitchhiking [1] (in which neutral variants rise to high frequency with adaptive variants) and background selection [6] (BGS; in which neutral variants are removed along with deleterious variants) can be widespread across the genome.
-Evidence for selection at linked sites has been found across an array of species, including \textit{Drosophila melanogaster} [10,12–16], wild and domesticated rice [17,18], \textit{Capsella} [19], maize [20], and humans [21–27].
+Both theory and empirical observation have long shown that patterns of neutral genetic variation can vary regionally across the genome as a function of recombination rate \citep{smith1974hitch, begun1992levels}.
+This is because natural selection operating on selected sites not only decreases genetic variation at the focal site but can also lead to decreases in nearby neutral genetic diversity due to genetic linkage \citep{cutter2013genomic}.
+These effects, known as genetic hitchhiking \citep{smith1974hitch}[1] (in which neutral variants rise to high frequency with adaptive variants) and background selection \citep{charlesworth1993effect} (BGS; in which neutral variants are removed along with deleterious variants) can be widespread across the genome.
+Evidence for selection at linked sites has been found across an array of species, including \textit{Drosophila melanogaster} \citep{begun1992levels, comeron2014background, charlesworth1996background, andolfatto2007hitchhiking, sella2009pervasive, elyashiv2016genomic}, wild and domesticated rice \citep{flowers2011natural, xu2012resequencing}, \textit{Capsella} \citep{williamson2014evidence}, maize \citep{beissinger2016recent}, and humans \citep{sabeti2002detecting, reed2005fitting, voight2006map, mcvicker2009widespread, cai2009pervasive, hernandez2011classic, lohmueller2011natural}.
 
 Demographic change can also impact patterns of diversity across the genome.
-For example, neutral theory predicts that the amount of genetic diversity is proportional to a population’s effective population size (Ne), such that changes in Ne should result in concomitant changes to diversity [28].
-However, evidence suggests that such diversity also varies much less in magnitude across species when compared to their census population sizes [29,30].
+For example, neutral theory predicts that the amount of genetic diversity is proportional to a population’s effective population size (\textit{$N_e$}), such that changes in \textit{$N_e$} should result in concomitant changes to diversity \citep{kimura1983neutral}[28].
+However, evidence suggests that such diversity also varies much less in magnitude across species when compared to their census population sizes \citep{lewontin1974genetic, leffler2012revisiting}[29,30].
 One of the most common forms of a population size change is a population bottleneck, whereby populations suffer a large decrease followed by an expansion.
-Bottlenecks can occur via domestication events [31–34], seasonal or cyclical fluctuations in population size [35–38], and founder events [39–41].
+Bottlenecks can occur via domestication events \citep{doebley2006molecular, tang2010domestication, wiener2011deciphering, gaut2018demography}[31–34], seasonal or cyclical fluctuations in population size \citep{elton1924periodic, ives1970further, itoh2009seasonal, noren2014genetic}[35–38], and founder events \citep{henn2012great, dlugosch2008founding, david1988genetic}[39–41].
 Notably, while the rate of loss of diversity in response to a population contraction is quite fast, the recovery of diversity from a following population increase can be quite slow [42].
 As a result,  large contemporary populations may still yield patterns of low average genetic diversity if their population size was much smaller in the recent past.
 In humans, this is clearly evident in European and Asian populations due to the out-of-Africa bottleneck [43].
@@ -146,7 +146,7 @@ We conducted 10,000 bootstrap iterations and generated confidence intervals from
 
 \subsection{Calculations of expected BGS}
 
-To calculate the predicted \jri{can we say instantaneuos?} $\pi/\pi_0$ given the specific $N_e$ at each time point for each demographic model, we used equation 14 of \citet{nordborg1996effect}, but modified it accordingly to incorporate two gamma distributions of fitness effects.
+To calculate the predicted instantaneous $\pi/\pi_0$ given the specific $N_e$ at each time point for each demographic model, we used equation 14 of \citet{nordborg1996effect}, but modified it accordingly to incorporate two gamma distributions of fitness effects.
 Additionally, in order to properly model our simulations, we only calculated the effects of BGS on one side of the selected locus.
 This resulted in the following modified equation:
 
@@ -159,7 +159,7 @@ exp\left( -\frac{U_T}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r
     \end{aligned}
 \end{eqnarray*}
 
-Here, $R$ is the total length \jri{in cM or?} of the selected locus, $U$ is the total deleterious mutation rate across the selected locus, $r(z)$ is the genetic map distance between a neutral site and a deleterious mutation, and $s$ is the selection coefficient of a deleterious mutation.
+Here, $R$ is the total length of the selected locus, $U$ is the total deleterious mutation rate across the selected locus, $r(z)$ is the genetic map distance between a neutral site and a deleterious mutation, and $s$ is the selection coefficient of a deleterious mutation.
 The left side of the equation models the effects of BGS according to the gamma DFE inferred by Ref. [53] (represented by $\Gamma(s,\alpha_T,\beta_T)$) and the right side of the equation models the effects of BGS according to the gamma DFE inferred by Ref. [54] (represented by $\Gamma(s,\alpha_B,\beta_B)$).
 
 Because $N_e$ is not explicitly included in this model of BGS, we followed previous workers [12,55] in trtuncating selection at some value $C$,
@@ -177,12 +177,12 @@ While this value provides a coarse estimate for the effects of BGS on $\pi/\pi_0
 
 \subsection{Background selection under instantaneous population size change}
 
-We first present the joint effects of demography and bacgkround selection (hereafter, BGS) under simple demographic models with a single instantaneous change in size (models 2-4; Figure \ref{supp:models1}).
+We first present the joint effects of demography and bacgkround selection (hereafter, BGS) under simple demographic models with a single instantaneous change in size (models 2-4; Figure \ref{fig:S1}).
 While our simulation model incorporated a 200 kb neutral region, we first focused on patterns of diversity generated within the 10 kb window nearest to the 2 Mb locus experiencing purifying selection, as this is where BGS is strongest.
 Doing so allowed us to observe any change in the dynamics of $\pi$ and $\xi$ as they approached new population
 equilibria resulting from a change in size.
 In the simple bottleneck models (models 2-3) we observed the expected strong decrease in $\xi$ and $\pi$ following  population contraction in both models of BGS and neutrality (Figure \ref{fig:S6}).
-Similarly, we observed the expected rapid increase in $\xi$ compared to $\pi$ in our model of a simple population expansion (model 4; Figure \ref{fig:S6}). \jri{ here i think we want an inset on $\xi$ for model 4 too. could probably ditch the legend inset here since the caption provides colors in this and similar figures.}
+Similarly, we observed the expected rapid increase in $\xi$ compared to $\pi$ in our model of a simple population expansion (model 4; Figure \ref{fig:S6}). 
 In all cases, while value of $\xi$ and $\pi$ were lower in models with BGS, diversity values also changed more rapidly than in the neutral case (Figure \ref{fig:S9}).
 
 \begin{figure}[]
@@ -196,7 +196,7 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \end{figure}
 
 To examine the interaction of demography and selection observed in empirical data \citep{beissinger2016recent,torres2018human}, we normalize $\pi$ and $\xi$ in models of BGS by their equivalent statistics generated under the same demographic model in the absence of any selection ($\pi_0$ and $\xi_0$).
-We observed that $\pi/\pi_0$ and $\xi/\xi_0$ were dynamic through time in response to demography, with changes occurring to both their magnitude and direction (Figure \ref{fig:1}). \jri{i like having 2-4 together, and hacked together a crappy version of what i think this could look like. Raul can you take a stab at making something like this?}
+We observed that $\pi/\pi_0$ and $\xi/\xi_0$ were dynamic through time in response to demography, with changes occurring to both their magnitude and direction (Figure \ref{fig:1}). 
 Moreover, changes to $\xi/\xi_0$ occurred more rapidly through time when compared to $\pi/\pi_0$.
 For example, in model 2 we observed a dip and rise in the $\xi/\xi_0$ statistic relative to the equilibrium model 1 within the first $\approx 0.1N_{anc}$ generations ($N_{anc}$ refers to the $N_e$ of the ancestral population prior to any demographic change).
 Yet, for the same model, $\pi/\pi_0$ remained depressed for over $0.5N_{anc}$ generations (Figure \ref{fig:1}).
@@ -217,8 +217,8 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 Changes in population size should lead to changes in the rate of genetic drift and the efficacy of natural selection and, thus, changes in the magnitude of BGS across time.
 Indeed, under equilibrium contions, the classic model of BGS \citep{nordborg1996effect} predicts weaker BGS (with higher $\pi/\pi_0$) for smaller populations and stronger BGS (with lower $\pi/\pi_0$) for larger populations.
 To compare these prediction to those of our simple demographic models, we calculated the predicted $\pi/\pi_0$ under the classic mdoel given the instantaneous $N_e$ at each time point.
-In all three simple demographic models, however, the short-term predictions of $\pi/\pi_0$ from the classic model are qualitatively opposite those observed (Figure \ref{fig:1}; bottom panel).
-The classic model predicted a higher value for $\pi/\pi_0$ immediately following a population contraction, yet we observed a transient drop in $\pi/\pi_0$ after a bottleneck (models 2 and 3).
+In all three simple demographic models, however, we observed that changes in $\pi/\pi_0$ over the short term were qualitatively opposite of predictions from the classic model  (Figure \ref{fig:1}; bottom panel).
+The classic model predicts a higher value for $\pi/\pi_0$ in a smaller population, yet we observed a transient drop in $\pi/\pi_0$ directly after a bottleneck (models 2 and 3).
 Similarly, while the classic model predicts a decrease in $\pi/\pi_0$ in larger populations, we observed a sustained increase in $\pi/\pi_0$ with population expansion (model 4) extending over the entire $N_{anc}$ generations of the simulation.
 % Even though $\xi/\xi_0$ and $\pi/\pi_0$ experienced
 % drops immediately in response to the population reductions of models 2
@@ -228,7 +228,7 @@ Similarly, while the classic model predicts a decrease in $\pi/\pi_0$ in larger 
 % Nordborg model.
 
 
-\subsection{Simulations of BGS and demography -- bottleneck-expansion models}
+\subsection{Babckground selection under bottleneck-expansion models}
 
 We built upon the simple two epoch demographic scenarios to test more
 complex demographic scenarios and their effects on patterns of diversity
@@ -502,8 +502,8 @@ help to uncover such patterns.
 \section{Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\jri{behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models}
-\jri{models2-3}
+%behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models
+%models2-3
 While the effects of BGS should be attenuated in populations with lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
 Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
 These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
@@ -536,7 +536,7 @@ behave neutrally under the low $N_e$ size of 400 for
 that model.
 
 
-\jri{model4}:
+%model4
 The latter pattern occurred despite the
 expectation of a decrease in $\pi/\pi_0$ from the Nordborg
 model, which would have been generated by more efficient purifying
