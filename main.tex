@@ -177,11 +177,11 @@ While this value provides a coarse estimate for the effects of BGS on $\pi/\pi_0
 \subsection{Background selection under instantaneous population size change}
 
 We first present the joint effects of demography and background selection (hereafter, BGS) under simple demographic models with a single instantaneous change in size (models 2-4; Figure \ref{fig:S1}).
-While our simulation model incorporated a 200 kb neutral region, we first focused on patterns of diversity generated within the 10 kb window nearest to the 2 Mb locus experiencing purifying selection, as this is where BGS is strongest.
+While our simulations incorporated a 200 kb neutral region, we first focused on patterns of diversity generated within the 10 kb window nearest to the 2 Mb locus experiencing purifying selection, as this is where BGS is strongest.
 Doing so allowed us to observe any change in the dynamics of $\pi$ and $\xi$ as they approached new population equilibria resulting from a change in size.
 In the simple bottleneck models (models 2-3) we observed the expected strong decrease in $\xi$ and $\pi$ following  population contraction in both models of BGS and neutrality (Figure \ref{fig:S6}).
 Similarly, we observed the expected rapid increase in $\xi$ compared to $\pi$ in our model of a simple population expansion (model 4; Figure \ref{fig:S6}). 
-In all cases, while value of $\xi$ and $\pi$ were lower in models with BGS, diversity values also changed more rapidly than in the neutral case (Figure \ref{fig:S9}).
+In all cases values of $\xi$ and $\pi$ were lower in models with BGS and diversity values changed more rapidly than in the neutral case (Figure \ref{fig:S9}).
 
 \begin{figure}[]
 \includegraphics[width=\linewidth]{figures/FigS6.pdf}
@@ -196,10 +196,10 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 To examine the interaction of demography and selection observed in empirical data \citep{beissinger2016recent,torres2018human}, we normalize $\pi$ and $\xi$ in models of BGS by their equivalent statistics generated under the same demographic model in the absence of any selection ($\pi_0$ and $\xi_0$).
 We observed that $\pi/\pi_0$ and $\xi/\xi_0$ were dynamic through time in response to demography, with changes occurring to both their magnitude and direction (Figure \ref{fig:1}). 
 Moreover, changes to $\xi/\xi_0$ occurred more rapidly through time compared to $\pi/\pi_0$.
-For example, in model 2 we observed a dip and rise in the $\xi/\xi_0$ statistic relative to the equilibrium model 1 within the first $\approx 0.1N_{anc}$ generations ($N_{anc}$ refers to the $N_e$ of the ancestral population prior to any demographic change).
+For example, in model 2 we observed a dip and rise in the $\xi/\xi_0$ statistic relative to equilibrium (model 1) within the first $\approx 0.1N_{anc}$ generations ($N_{anc}$ refers to the $N_e$ of the ancestral population prior to any demographic change).
 Yet, for the same model, $\pi/\pi_0$ remained depressed for over $0.5N_{anc}$ generations (Figure \ref{fig:1}).
-Similar patterns were observed for model 3, which experienced a greater reduction in size, although the pattern is less clear due to the greater sampling variance of $\xi/\xi_0$ due to the overall lower number of singletons.
-In both models, both $\pi/\pi_0$ and $\xi/\xi_0$ appeared to plateau at levels above that of model the equilibrium model 1.
+Similar patterns were observed for model 3, which experienced a greater reduction in size, although the pattern is less clear because of the greater sampling variance of $\xi/\xi_0$ due to the overall lower number of singletons.
+In both bottleneck models  $\pi/\pi_0$ and $\xi/\xi_0$ appeared to plateau at levels above that of model the equilibrium model 1.
 In contrast, we observed markedly different dynamics in our model of simple population expansion (model 4), with a sustained increase in $\pi/\pi_0$ but only a transient increase in $\xi/\xi_0$ within the first $\approx 0.1N_{anc}$, followed by a reduction to levels below that of the equilibrium model.
 
 \begin{figure}[]
@@ -212,32 +212,25 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \label{fig:1}
 \end{figure}
 
-Changes in population size should lead to changes in the rate of genetic drift and the efficacy of natural selection and, thus, changes in the magnitude of BGS across time.
+Changes in population size should lead to changes in the rate of genetic drift and the efficacy of natural selection and, thus, changes in the magnitude of BGS over time.
 Indeed, under equilibrium contions, the classic model of BGS \citep{nordborg1996effect} predicts weaker BGS (with higher $\pi/\pi_0$) for smaller populations and stronger BGS (with lower $\pi/\pi_0$) for larger populations.
-To compare these prediction to those of our simple demographic models, we calculated the predicted equilibrium $\pi/\pi_0$ under the classic model given the instantaneous $N_e$ at each time point.
-In all three simple demographic models, however, we observed that changes in $\pi/\pi_0$ over the short term were qualitatively opposite of predictions from the classic model  (Figure \ref{fig:1}; bottom panel).
+To compare these prediction to those of our simple demographic models, we calculated the predicted equilibrium $\pi/\pi_0$ under the classic model given the instantaneous $N_e$ at each generation.
+In all three simple demographic models we observed that changes in $\pi/\pi_0$ over the short term differed qualitatively from the classic model  (Figure \ref{fig:1}; bottom panel).
 The classic model predicts a higher value for $\pi/\pi_0$ in a smaller population, yet we observed a transient drop in $\pi/\pi_0$ directly after a bottleneck (models 2 and 3).
-Similarly, while the classic model predicts a decrease in $\pi/\pi_0$ in larger populations, we observed a sustained increase in $\pi/\pi_0$ with population expansion (model 4) extending over the entire $N_{anc}$ generations of the simulation.
-% Even though $\xi/\xi_0$ and $\pi/\pi_0$ experienced
-% drops immediately in response to the population reductions of models 2
-% and 3, these patterns of reduced $\xi/\xi_0$ and
-% $\pi/\pi_0$ reversed themselves through time and, in the case
-% of $\pi/\pi_0$, approached the expectation predicted by the
-% Nordborg model.
+Similarly, while the classic model predicts a decrease in $\pi/\pi_0$ in larger populations, we observed an increase in $\pi/\pi_0$ with population expansion (model 4).
+The trajectory of $\pi/\pi_0$ changed in our bottleneck models, eventually approaching the expectation predicted by the classic model, while trast, $\pi/\pi_0$ in the expansion model continued to increase over the entire course of the simulaton.
 
+\subsection{Background selection under bottleneck-expansion models}
 
-\subsection{Babckground selection under bottleneck-expansion models}
-
-We built upon the simple two epoch demographic scenarios to test more complex demographic scenarios and better understand the relative effects of different events on patterns of diversity under BGS. 
+We built upon the simple two epoch demographic models  to test more complex  scenarios and better understand the relative effects of different events on patterns of diversity under BGS. 
 Specifically,  we simulated a population undergoing a contraction similar in size to models 2 and 3, but with a subsequent expansion to 400,000 individuals by the final generation (Figure \ref{fig:S2}. 
-These bottleneck-expansion models included both ancient ($1.0N_{anc}$ generations in the past, models 5-8) and recent ($0.1N_{anc}$ generations in the past, models 9-12) bottlenecks as well as both instantaneous expansion (models 5-6,9-10) or sustained bottlenecks (models 7-8,11-12).
+These bottleneck-expansion models included both ancient ($1.0N_{anc}$ generations in the past, models 5-8) and recent ($0.1N_{anc}$ generations in the past, models 9-12) bottlenecks as well as both instantaneous expansion (models 5-6,9-10) or a sustained bottleneck (models 7-8,11-12).
 In spite of the inclusion of an expansion, however, these models largely recapitulated patterns observed in our simple bottleneck models.
-In all cases, diversity  in models with BGS was both lower (Figures \ref{fig:S4}-\ref{fig:S5}) and changed more rapidly (Figures \ref{fig:S7}-\ref{fig:S8}).
+In all cases, diversity  in models with BGS was both lower (Figures \ref{fig:S4}-\ref{fig:S5}) and changed more rapidly (Figures \ref{fig:S7}-\ref{fig:S8}) than in neutral simulations.
 Changes in diversity also occurred more quickly in models with a stronger or sustained bottleneck, and  $\xi$ again exhibited more rapid dynamics than did $\pi$.
 Mirroring results from our simple bottleneck scenarios, models with an ancient bottleneck (models 5-8) showed a transient decrease in $\xi/\xi_0$ and $\pi/\pi_0$ followed by an increase to higher values (Figure \ref{fig:3new}).
-%, consistent with the effects of weakened BGS as a result of the initial population decline.
 Again changes in $\pi/\pi_0$ contrast with the expectations of the classic model, where  BGS is expected to become more efficient in larger populations, resulting in an expected decrease in $\pi/\pi_0$ (Figure \ref{fig:3new), dotted line). 
-But while both $\pi/\pi_0$ and $\xi/\xi_0$ remain elevated in our simple bottleneck models, $\xi/\xi_0$ changes direction again and begins to decline, eventually reaching values below that of the equilibrium population. 
+But while both $\pi/\pi_0$ and $\xi/\xi_0$ remain elevated in our simple bottleneck models, $\xi/\xi_0$ in these bottleneck and expansion models changes direction again and begins to decline, eventually reaching values below that of the equilibrium population. 
 Though the trajectories of $\pi/\pi_0$ and $\xi/\xi_0$ were truncated for models in which the bottleneck occurred in the recent ($0.1N_{anc}$ generations) past, they nonetheless appeared to behave qualitatively similar to ancient bottleneck models (Figure \ref{fig:S912}).
 
 \begin{figure}[]
@@ -250,9 +243,8 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \label{fig:3new}
 \end{figure}
 
-
-\subsection{Patterns of $\pi/\pi_0$ and $\xi/\xi_0$ across
-200 kb neutral region}
+%JRI HERE
+\subsection{Patterns of $\pi/\pi_0$ and $\xi/\xi_0$ across 200 kb neutral region}
 
 We also measured patterns of $\pi/\pi_0$ across time for the
 entire 200 kb neutral region. Doing so showed the characteristic
