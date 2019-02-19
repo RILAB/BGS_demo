@@ -1,25 +1,309 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{57}
+
+\bibitem[{Andolfatto}(2007)]{andolfatto2007hitchhiking}
+{Andolfatto, P.}, 2007 Hitchhiking effects of recurrent beneficial amino acid
+  substitutions in the \textit{{D}rosophila melanogaster} genome. Genome
+  Research {\bf 17}: 1755--1762.
+
+\bibitem[{Auton {\em et~al.\/}}(2015){Auton, Abecasis, Altshuler, Durbin, {\em
+  et~al.\/}}]{10002015global}
+{Auton, A., G.~R. Abecasis, D.~M. Altshuler, R.~M. Durbin, {\em et~al.\/}},
+  2015 A global reference for human genetic variation. Nature {\bf 526}:
+  68--74.
+
+\bibitem[{Begun {\rm and} Aquadro}(1992)]{begun1992levels}
+{Begun, D.~J. {\rm and} C.~F. Aquadro}, 1992 Levels of naturally occurring
+  {DNA} polymorphism correlate with recombination rates in \textit{{D}.
+  melanogaster}. Nature {\bf 356}: 519--520.
 
 \bibitem[{Beissinger {\em et~al.\/}}(2016){Beissinger, Wang, Crosby, Durvasula,
   Hufford, {\rm and} Ross-Ibarra}]{beissinger2016recent}
 {Beissinger, T.~M., L.~Wang, K.~Crosby, A.~Durvasula, M.~B. Hufford, {\em
   et~al.\/}}, 2016 Recent demography drives changes in linked selection across
-  the maize genome. Nature plants {\bf 2}: 16084.
+  the maize genome. Nature Plants {\bf 2}: 16084.
+
+\bibitem[{Boyko {\em et~al.\/}}(2008){Boyko, Williamson, Indap, Degenhardt,
+  Hernandez, Lohmueller, Adams, Schmidt, Sninsky, Sunyaev, {\em
+  et~al.\/}}]{boyko2008assessing}
+{Boyko, A.~R., S.~H. Williamson, A.~R. Indap, J.~D. Degenhardt, R.~D.
+  Hernandez, {\em et~al.\/}}, 2008 Assessing the evolutionary impact of amino
+  acid mutations in the human genome. PLoS Genetics {\bf 4}: e1000083.
+
+\bibitem[{Cai {\em et~al.\/}}(2009){Cai, Macpherson, Sella, {\rm and}
+  Petrov}]{cai2009pervasive}
+{Cai, J.~J., J.~M. Macpherson, G.~Sella, {\rm and} D.~A. Petrov}, 2009
+  Pervasive hitchhiking at coding and regulatory sites in humans. PLoS Genetics
+  {\bf 5}: e1000336.
+
+\bibitem[{Charlesworth}(1996)]{charlesworth1996background}
+{Charlesworth, B.}, 1996 Background selection and patterns of genetic diversity
+  in \textit{{D}rosophila melanogaster}. Genetics Research {\bf 68}: 131--149.
+
+\bibitem[{Charlesworth}(2009)]{charlesworth2009effective}
+{Charlesworth, B.}, 2009 Effective population size and patterns of molecular
+  evolution and variation. Nature Reviews Genetics {\bf 10}: 195--205.
+
+\bibitem[{Charlesworth}(2012)]{charlesworth2012role}
+{Charlesworth, B.}, 2012 The role of background selection in shaping patterns
+  of molecular evolution and variation: evidence from variability on the
+  \textit{{D}rosophila} {X} chromosome. Genetics {\bf 191}: 233--246.
+
+\bibitem[{Charlesworth {\em et~al.\/}}(1993){Charlesworth, Morgan, {\rm and}
+  Charlesworth}]{charlesworth1993effect}
+{Charlesworth, B., M.~Morgan, {\rm and} D.~Charlesworth}, 1993 The effect of
+  deleterious mutations on neutral molecular variation. Genetics {\bf 134}:
+  1289--1303.
+
+\bibitem[{Comeron}(2014)]{comeron2014background}
+{Comeron, J.~M.}, 2014 Background selection as baseline for nucleotide
+  variation across the \textit{{D}rosophila} genome. PLoS Genetics {\bf 10}:
+  e1004434.
 
 \bibitem[{Comeron}(2017)]{comeron2017background}
 {Comeron, J.~M.}, 2017 Background selection as null hypothesis in population
-  genomics: insights and challenges from drosophila studies. Phil. Trans. R.
-  Soc. B {\bf 372}: 20160471.
+  genomics: insights and challenges from \textit{{D}rosophila} studies. Phil.
+  Trans. R. Soc. B {\bf 372}: 20160471.
+
+\bibitem[{Coop}(2016)]{coop2016does}
+{Coop, G.}, 2016 Does linked selection explain the narrow range of genetic
+  diversity across species? bioRxiv .
+
+\bibitem[{Corbett-Detig {\em et~al.\/}}(2015){Corbett-Detig, Hartl, {\rm and}
+  Sackton}]{corbett2015natural}
+{Corbett-Detig, R.~B., D.~L. Hartl, {\rm and} T.~B. Sackton}, 2015 Natural
+  selection constrains neutral diversity across a wide range of species. PLoS
+  Biology {\bf 13}: e1002112.
+
+\bibitem[{Cutter {\rm and} Payseur}(2013)]{cutter2013genomic}
+{Cutter, A.~D. {\rm and} B.~A. Payseur}, 2013 Genomic signatures of selection
+  at linked sites: unifying the disparity among species. Nature Reviews
+  Genetics {\bf 14}: 262--274.
+
+\bibitem[{David {\rm and} Capy}(1988)]{david1988genetic}
+{David, J.~R. {\rm and} P.~Capy}, 1988 Genetic variation of
+  \textit{{D}rosophila melanogaster} natural populations. Trends in Genetics
+  {\bf 4}: 106--111.
+
+\bibitem[{Dlugosch {\rm and} Parker}(2008)]{dlugosch2008founding}
+{Dlugosch, K. {\rm and} I.~Parker}, 2008 Founding events in species invasions:
+  genetic variation, adaptive evolution, and the role of multiple
+  introductions. Molecular Ecology {\bf 17}: 431--449.
+
+\bibitem[{Doebley {\em et~al.\/}}(2006){Doebley, Gaut, {\rm and}
+  Smith}]{doebley2006molecular}
+{Doebley, J.~F., B.~S. Gaut, {\rm and} B.~D. Smith}, 2006 The molecular
+  genetics of crop domestication. Cell {\bf 127}: 1309--1321.
+
+\bibitem[{Elton}(1924)]{elton1924periodic}
+{Elton, C.~S.}, 1924 Periodic fluctuations in the numbers of animals: their
+  causes and effects. Journal of Experimental Biology {\bf 2}: 119--163.
+
+\bibitem[{Elyashiv {\em et~al.\/}}(2016){Elyashiv, Sattath, Hu, Strutsovsky,
+  McVicker, Andolfatto, Coop, {\rm and} Sella}]{elyashiv2016genomic}
+{Elyashiv, E., S.~Sattath, T.~T. Hu, A.~Strutsovsky, G.~McVicker, {\em
+  et~al.\/}}, 2016 A genomic map of the effects of linked selection in
+  \textit{{D}rosophila}. PLoS Genetics {\bf 12}: e1006130.
+
+\bibitem[{Flowers {\em et~al.\/}}(2011){Flowers, Molina, Rubinstein, Huang,
+  Schaal, {\rm and} Purugganan}]{flowers2011natural}
+{Flowers, J.~M., J.~Molina, S.~Rubinstein, P.~Huang, B.~A. Schaal, {\em
+  et~al.\/}}, 2011 Natural selection in gene-dense regions shapes the genomic
+  pattern of polymorphism in wild and domesticated rice. Molecular Biology and
+  Evolution {\bf 29}: 675--687.
+
+\bibitem[{Gaut {\em et~al.\/}}(2018){Gaut, Seymour, Liu, {\rm and}
+  Zhou}]{gaut2018demography}
+{Gaut, B.~S., D.~K. Seymour, Q.~Liu, {\rm and} Y.~Zhou}, 2018 Demography and
+  its effects on genomic variation in crop domestication. Nature Plants {\bf
+  4}: 512--520.
+
+\bibitem[{Gillespie}(2001)]{gillespie2001population}
+{Gillespie, J.~H.}, 2001 Is the population size of a species relevant to its
+  evolution? Evolution {\bf 55}: 2161--2169.
+
+\bibitem[{Henn {\em et~al.\/}}(2012){Henn, Cavalli-Sforza, {\rm and}
+  Feldman}]{henn2012great}
+{Henn, B.~M., L.~L. Cavalli-Sforza, {\rm and} M.~W. Feldman}, 2012 The great
+  human expansion. Proceedings of the National Academy of Sciences {\bf 109}:
+  17758--17764.
+
+\bibitem[{Hernandez {\em et~al.\/}}(2011){Hernandez, Kelley, Elyashiv, Melton,
+  Auton, McVean, Sella, Przeworski, {\em et~al.\/}}]{hernandez2011classic}
+{Hernandez, R.~D., J.~L. Kelley, E.~Elyashiv, S.~C. Melton, A.~Auton, {\em
+  et~al.\/}}, 2011 Classic selective sweeps were rare in recent human
+  evolution. Science {\bf 331}: 920--924.
+
+\bibitem[{Hudson {\rm and} Kaplan}(1995)]{hudson1995deleterious}
+{Hudson, R.~R. {\rm and} N.~L. Kaplan}, 1995 Deleterious background selection
+  with recombination. Genetics {\bf 141}: 1605--1617.
+
+\bibitem[{Itoh {\em et~al.\/}}(2009){Itoh, Nanba, Hasegawa, Inomata, Kondo,
+  Oshima, {\rm and} Takano-Shimizu}]{itoh2009seasonal}
+{Itoh, M., N.~Nanba, M.~Hasegawa, N.~Inomata, R.~Kondo, {\em et~al.\/}}, 2009
+  Seasonal changes in the long-distance linkage disequilibrium in
+  \textit{{D}rosophila melanogaster}. Journal of heredity {\bf 101}: 26--32.
+
+\bibitem[{Ives}(1970)]{ives1970further}
+{Ives, P.~T.}, 1970 Further genetic studies of the {S}outh {A}mherst population
+  of \textit{{D}rosophila melanogaster}. Evolution {\bf 24}: 507--518.
+
+\bibitem[{Kaplan {\em et~al.\/}}(1989){Kaplan, Hudson, {\rm and}
+  Langley}]{kaplan1989hitchhiking}
+{Kaplan, N.~L., R.~Hudson, {\rm and} C.~Langley}, 1989 The "hitchhiking effect"
+  revisited. Genetics {\bf 123}: 887--899.
+
+\bibitem[{Keightley {\rm and} Booker}(2018)]{keightley2018understanding}
+{Keightley, P.~D. {\rm and} T.~R. Booker}, 2018 Understanding the factors that
+  shape patterns of nucleotide diversity in the house mouse genome. Molecular
+  Biology and Evolution {\bf 35}: 2971--2988.
+
+\bibitem[{Kimura}(1983)]{kimura1983neutral}
+{Kimura, M.}, 1983 {\em The neutral theory of molecular evolution\/}. Cambridge
+  University Press, Cambridge.
+
+\bibitem[{Leffler {\em et~al.\/}}(2012){Leffler, Bullaughey, Matute, Meyer,
+  Segurel, Venkat, Andolfatto, {\rm and} Przeworski}]{leffler2012revisiting}
+{Leffler, E.~M., K.~Bullaughey, D.~R. Matute, W.~K. Meyer, L.~Segurel, {\em
+  et~al.\/}}, 2012 Revisiting an old riddle: {W}hat determines genetic
+  diversity levels within species? PLoS Biology {\bf 10}: e1001388.
+
+\bibitem[{Lewontin}(1974)]{lewontin1974genetic}
+{Lewontin, R.~C.}, 1974 {\em The genetic basis of evolutionary change\/}.
+  Columbia University Press, New York.
+
+\bibitem[{Lohmueller {\em et~al.\/}}(2011){Lohmueller, Albrechtsen, Li, Kim,
+  Korneliussen, Vinckenbosch, Tian, Huerta-Sanchez, Feder, Grarup, {\em
+  et~al.\/}}]{lohmueller2011natural}
+{Lohmueller, K.~E., A.~Albrechtsen, Y.~Li, S.~Y. Kim, T.~Korneliussen, {\em
+  et~al.\/}}, 2011 Natural selection affects multiple aspects of genetic
+  variation at putatively neutral sites across the human genome. PLoS Genetics
+  {\bf 7}: e1002326.
+
+\bibitem[{Maruyama {\rm and} Fuerst}(1984)]{maruyama1984population}
+{Maruyama, T. {\rm and} P.~A. Fuerst}, 1984 Population bottlenecks and
+  nonequilibrium models in population genetics. {I}. {A}llele numbers when
+  populations evolve from zero variability. Genetics {\bf 108}: 745--763.
+
+\bibitem[{Maruyama {\rm and} Fuerst}(1985)]{maruyama1985population}
+{Maruyama, T. {\rm and} P.~A. Fuerst}, 1985 Population bottlenecks and
+  nonequilibrium models in population genetics. {II}. {N}umber of alleles in a
+  small population that was formed by a recent bottleneck. Genetics {\bf 111}:
+  675--689.
+
+\bibitem[{McVicker {\em et~al.\/}}(2009){McVicker, Gordon, Davis, {\rm and}
+  Green}]{mcvicker2009widespread}
+{McVicker, G., D.~Gordon, C.~Davis, {\rm and} P.~Green}, 2009 Widespread
+  genomic signatures of natural selection in hominid evolution. PLoS Genetics
+  {\bf 5}: e1000471.
+
+\bibitem[{Nei {\em et~al.\/}}(1975){Nei, Maruyama, {\rm and}
+  Chakraborty}]{nei1975bottleneck}
+{Nei, M., T.~Maruyama, {\rm and} R.~Chakraborty}, 1975 The bottleneck effect
+  and genetic variability in populations. Evolution {\bf 29}: 1--10.
+
+\bibitem[{Nicolaisen {\rm and} Desai}(2013)]{nicolaisen2013distortions}
+{Nicolaisen, L.~E. {\rm and} M.~M. Desai}, 2013 Distortions in genealogies due
+  to purifying selection and recombination. Genetics {\bf 195}: 221--230.
 
 \bibitem[{Nordborg {\em et~al.\/}}(1996){Nordborg, Charlesworth, {\rm and}
   Charlesworth}]{nordborg1996effect}
 {Nordborg, M., B.~Charlesworth, {\rm and} D.~Charlesworth}, 1996 The effect of
   recombination on background selection. Genetics Research {\bf 67}: 159--174.
 
+\bibitem[{Nor{\'e}n {\rm and} Angerbj{\"o}rn}(2014)]{noren2014genetic}
+{Nor{\'e}n, K. {\rm and} A.~Angerbj{\"o}rn}, 2014 Genetic perspectives on
+  northern population cycles: bridging the gap between theory and empirical
+  studies. Biological Reviews {\bf 89}: 493--510.
+
+\bibitem[{Reed {\em et~al.\/}}(2005){Reed, Akey, {\rm and}
+  Aquadro}]{reed2005fitting}
+{Reed, F.~A., J.~M. Akey, {\rm and} C.~F. Aquadro}, 2005 Fitting
+  background-selection predictions to levels of nucleotide variation and
+  divergence along the human autosomes. Genome Research {\bf 15}: 1211--1221.
+
+\bibitem[{Sabeti {\em et~al.\/}}(2002){Sabeti, Reich, Higgins, Levine, Richter,
+  Schaffner, Gabriel, Platko, Patterson, McDonald, {\em
+  et~al.\/}}]{sabeti2002detecting}
+{Sabeti, P.~C., D.~E. Reich, J.~M. Higgins, H.~Z. Levine, D.~J. Richter, {\em
+  et~al.\/}}, 2002 Detecting recent positive selection in the human genome from
+  haplotype structure. Nature {\bf 419}: 832--837.
+
+\bibitem[{Santiago {\rm and} Caballero}(2016)]{santiago2016joint}
+{Santiago, E. {\rm and} A.~Caballero}, 2016 Joint prediction of the effective
+  population size and the rate of fixation of deleterious mutations. Genetics
+  {\bf 204}: 1267--1279.
+
+\bibitem[{Sella {\em et~al.\/}}(2009){Sella, Petrov, Przeworski, {\rm and}
+  Andolfatto}]{sella2009pervasive}
+{Sella, G., D.~A. Petrov, M.~Przeworski, {\rm and} P.~Andolfatto}, 2009
+  Pervasive natural selection in the \textit{{D}rosophila} genome? PLoS
+  Genetics {\bf 5}: e1000495.
+
+\bibitem[{Smith {\rm and} Haigh}(1974)]{smith1974hitch}
+{Smith, J.~M. {\rm and} J.~Haigh}, 1974 The hitch-hiking effect of a favourable
+  gene. Genetics Research {\bf 23}: 23--35.
+
+\bibitem[{Stankowski {\em et~al.\/}}(2018){Stankowski, Chase, Fuiten, Ralph,
+  {\rm and} Streisfeld}]{stankowski2018tempo}
+{Stankowski, S., M.~A. Chase, A.~M. Fuiten, P.~L. Ralph, {\rm and} M.~A.
+  Streisfeld}, 2018 The tempo of linked selection: {R}apid emergence of a
+  heterogeneous genomic landscape during a radiation of monkeyflowers. bioRxiv
+  .
+
+\bibitem[{Tajima}(1989)]{tajima1989effect}
+{Tajima, F.}, 1989 The effect of change in population size on {DNA}
+  polymorphism. Genetics {\bf 123}: 597--601.
+
+\bibitem[{Tang {\em et~al.\/}}(2010){Tang, Sezen, {\rm and}
+  Paterson}]{tang2010domestication}
+{Tang, H., U.~Sezen, {\rm and} A.~H. Paterson}, 2010 Domestication and plant
+  genomes. Current Opinion in Plant Biology {\bf 13}: 160--166.
+
+\bibitem[{Thornton}(2014)]{thornton2014c++}
+{Thornton, K.~R.}, 2014 A {C}++ template library for efficient forward-time
+  population genetic simulation of large populations. Genetics {\bf 198}:
+  157--166.
+
+\bibitem[{Torgerson {\em et~al.\/}}(2009){Torgerson, Boyko, Hernandez, Indap,
+  Hu, White, Sninsky, Cargill, Adams, Bustamante, {\em
+  et~al.\/}}]{torgerson2009evolutionary}
+{Torgerson, D.~G., A.~R. Boyko, R.~D. Hernandez, A.~Indap, X.~Hu, {\em
+  et~al.\/}}, 2009 Evolutionary processes acting on candidate cis-regulatory
+  regions in humans inferred from patterns of polymorphism and divergence. PLoS
+  Genetics {\bf 5}: e1000592.
+
 \bibitem[{Torres {\em et~al.\/}}(2018){Torres, Szpiech, {\rm and}
   Hernandez}]{torres2018human}
 {Torres, R., Z.~A. Szpiech, {\rm and} R.~D. Hernandez}, 2018 Human demographic
   history has amplified the effects of background selection across the genome.
-  PLoS genetics {\bf 14}: e1007387.
+  PLoS Genetics {\bf 14}: e1007387.
+
+\bibitem[{Voight {\em et~al.\/}}(2006){Voight, Kudaravalli, Wen, {\rm and}
+  Pritchard}]{voight2006map}
+{Voight, B.~F., S.~Kudaravalli, X.~Wen, {\rm and} J.~K. Pritchard}, 2006 A map
+  of recent positive selection in the human genome. PLoS Biology {\bf 4}: e72.
+
+\bibitem[{Wiener {\rm and} Wilkinson}(2011)]{wiener2011deciphering}
+{Wiener, P. {\rm and} S.~Wilkinson}, 2011 Deciphering the genetic basis of
+  animal domestication. Proceedings of the Royal Society B: Biological Sciences
+  {\bf 278}: 3161--3170.
+
+\bibitem[{Williamson {\em et~al.\/}}(2014){Williamson, Josephs, Platts,
+  Hazzouri, Haudry, Blanchette, {\rm and} Wright}]{williamson2014evidence}
+{Williamson, R.~J., E.~B. Josephs, A.~E. Platts, K.~M. Hazzouri, A.~Haudry,
+  {\em et~al.\/}}, 2014 Evidence for widespread positive and negative selection
+  in coding and conserved noncoding regions of \textit{{C}apsella grandiflora}.
+  PLoS Genetics {\bf 10}: e1004622.
+
+\bibitem[{Xu {\em et~al.\/}}(2012){Xu, Liu, Ge, Jensen, Hu, Li, Dong,
+  Gutenkunst, Fang, Huang, {\em et~al.\/}}]{xu2012resequencing}
+{Xu, X., X.~Liu, S.~Ge, J.~D. Jensen, F.~Hu, {\em et~al.\/}}, 2012 Resequencing
+  50 accessions of cultivated and wild rice yields markers for identifying
+  agronomically important genes. Nature Biotechnology {\bf 30}: 105--111.
+
+\bibitem[{Zeng}(2013)]{zeng2013coalescent}
+{Zeng, K.}, 2013 A coalescent model of background selection with recombination,
+  demography and variation in selection coefficients. Heredity {\bf 110}:
+  363--371.
 
 \end{thebibliography}
