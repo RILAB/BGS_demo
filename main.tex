@@ -124,7 +124,7 @@ These results should motivate further research into this area and support the us
 
 We simulated a diploid and randomly mating population using fwdpy11 v1.2a (\href{https://github.com/molpopgen/fwdpy11}{\emph{https://github.com/molpopgen/fwdpy11}}), a Python package using the fwdpp library \citep{thornton2014c++}.
 Selection parameters for simulating BGS followed those of \citet{torres2018human}, with deleterious variation occurring at 20\% of sites across a 2 Mb locus and the selection coefficient, \textit{s}, drawn from two distributions of fitness effects (DFE).
-Specifically, 13\% of deleterious sites were drawn from a gamma distribution (parameters: mean = $\alpha/\beta$, variance = $\alpha/\beta^2$) parameterized Gamma($\alpha = 0.0415$, $\beta = 80.11$) and seven percent from a distribution parameterized Gamma($\alpha = 0.184$, $\beta = 6.25$).
+Specifically, 13\% of deleterious sites were drawn from a gamma distribution (parameters: mean = $\alpha/\beta$, variance = $\alpha/\beta^2$) parameterized $\Gamma(\alpha = 0.0415, \beta = 80.11)$ and seven percent from a distribution parameterized $\Gamma(\alpha = 0.184, \beta = 6.25)$.
 These distributions mimic the DFEs inferred across non-coding and coding sites within the human genome \citep{torgerson2009evolutionary, boyko2008assessing}.
 Fitness followed a purely additive model in which the fitness effect of an allele was 0, $0.5s$, and $s$ for homozygous ancestral, heterozygous, and homozygous derived genotypes, respectively.
 Per base pair mutation and recombination rates also followed those of \citet{torres2018human} and were $1.66 \times 10^{-8}$ and $8.2 \times 10^{-10}$, respectively.
@@ -235,7 +235,7 @@ Though the trajectories of $\pi/\pi_0$ and $\xi/\xi_0$ were truncated for models
 
 \begin{figure}[]
 \includegraphics[width=\linewidth]{figures/fig3new.png}
-\caption{Relative singleton density ($\xi/\xi_0$) and relative diversity ($\pi/\pi_0$) across time for demographic models 1 and 5-12.
+\caption{Relative singleton density ($\xi/\xi_0$) and relative diversity ($\pi/\pi_0$) across time for demographic models 1 and 5-8.
 The top panel shows each demographic model as in Figure \ref{fig:1}.
 Black lines show $\xi/\xi_0$ and $\pi/\pi_0$ from simulations of a constant sized population (model 1).
 Dotted lines in the bottom panel show the equilibrium  expectation of $\pi/\pi_0$ from  \citet{nordborg1996effect} given the specific selection parameters and the instantaneous $N_e$ at each time point.
@@ -246,84 +246,66 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \subsection{Patterns of diversity across the 200 kb neutral region}
 
 We also measured patterns of $\pi/\pi_0$ across time for the entire 200 kb neutral region.
-Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the focal locus under selection (model 5 shown in  \ref{fig:200kb}, see Figures \ref{fig:S912} for all models).
+Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the focal locus under selection (model 5 shown in  \ref{fig:200kb}, see Figure \ref{fig:S912} for all models).
+Change in $\pi/\pi_0$ over time generally followed patterns observed in the neutral window closest to the selected region.
+In all of our ancient bottleneck models (models 2-8), for example, we see a decline in $\pi/\pi_0$ across the entire region followed by an increase to levels higher than in the ancestral population, while for recent bottlenecks (models 9-12) we see a consistent decline with no recovery and in our simple expansion model (model 4) $\pi/\pi_0$ increases monotonically through time.
 
-bneck: goes down and then up
-expansion (only up)
-recent bneck only down
-strong bneck flatter
-
-
-
-For the two-epoch models with a population contraction, we observed that the slope of the trough became more shallow through time (Table \X) \jri{Markus please add the table?}; this change was most apparent for the model with the strongest bottleneck (model 3), with patterns of $\pi/\pi_0$ appearing essentially flat across the 200 kb region in the final generation \ref{fig:S912}. \jri{Raul or Markus could you please fix this figure so the caption and references work?}
-However,  accelerated after
-$\pi/\pi_0$ across the 200 kb region reached its minimum values
-(Table 4).
+Yet these general patterns obscure more subtle changes in the slope of $\pi/\pi_0$ with increasing distance from the selected region.
+In models with a stronger bottleneck (models 2,3,6 and 8), where we expect the efficacy of selection to be most impacted, we see that the slope $\pi/\pi_0$ flattens over time, completely erasing the trough of diversity in the most extreme cases without recovery (models 2-3). 
 
 
 
-Thus, the
-impact of population contractions on mitigating the effects of BGS
-resulted in larger shifts of $\pi/\pi_0$ in regions of the
-genome already under the strongest amount of BGS.
-This makes sense since regions farther removed from loci under purifying selection (i.e., under weaker effects of BGS) have values of $\pi/\pi_0$ closer to the neutral expectation of 1.
-Thus, the upper bound for change in $\pi/\pi_0$ will be more limited there compared to regions more
-proximal to a selected locus.
-This provided further evidence for the dominant effects of
-drift and allelic loss on driving the initial decrease in
-$\pi/\pi_0$ immediately following a population contraction,
-which should have unbiased effects across all bins within the trough.
-During the subsequent recovery to higher values of $\pi/\pi_0$, we saw smaller differences arise
-between the nearest and farthest 10 kb bins, demonstrating the expected
-weakening effects of BGS following a population decline. This weakening
-of the trough structure was also most apparent for model 3, with
-patterns of $\pi/\pi_0$ appearing essentially flat across the
-200 kb region in the final generation (Figure S11).
+
 
 \begin{figure}[]
-\includegraphics[width=\linewidth]{figures/FigS13.pdf}}
+\includegraphics[width=\linewidth]{figures/FigS13.pdf}
 \caption{Relative diversity ($\pi/\pi_0$) and singleton density ($\xi/\xi_0$) through time for demographic model 5 measured across a neutral 200 kb region under the effects of BGS.
 The genetic distance of each 10 kb bin from the selected locus is indicated on the x-axis.
 Each line measuring $\pi/\pi_0$ and $\xi/\xi_0$ represents one of the 401 discrete generations sampled from the demographic model; colors follow the demographic model at the top (time is scaled as in Figure \ref{fig:s6}) and in the figure legend.
 Multiple plots are given in order to prevent overlap of the measurements between generations (see legend for specific generations covered in each plot).
 Blue dashed lines and red dashed lines indicate the first generation and last generation measured within each plot.}
-\label{fig:3new}
+\label{fig:200kb}
 \end{figure}
 
-
-
-We observed similar patterns for the bottleneck-expansion models that
-lasted 1 $N_{anc}$ generations (Figures S13-S16).
-Notably, among those models, the slope of the trough became more shallow
-for models 6 and 8 which were also the models suffering the deepest
-reductions in size (Figures S14, S16; Table 4). The fact that the trough
-structure for models 5 and 7 was better maintained showed that the
-population expansion following the reduction in size kept BGS stronger
-through time relative to models with the same decline in size but
-without a recovery (e.g., model 2). Models lasting 0.1
-$N_{anc}$ only captured the decrease of
-$\pi/\pi_0$ due to drift and saw very little difference develop
-across their troughs (Figures S17-S20). Similarly, for model 4, the
-trough structure remained unchanged throughout its demographic history
-(Figure S12).
-
-Finally, repeating the same analysis across the 200 kb regions for
-$\xi/\xi_0$ yielded no discernible patterns. Troughs were
-slightly apparent for the final generations of some models (i.e., models
-5 and 7), but the stochasticity between windows for $\xi/\xi_0$
-swamped any obvious patterns across the 200 kb region through time.
-Since $\xi/\xi_0$ is already less affected (and, thus, closer
-to 1) than $\pi/\pi_0$ because BGS perturbs common frequency
-bins of the SFS more than rare ones [57], any signal using rare
-frequency bins will be inherently more difficult to capture across
-differing magnitudes of BGS. However, more extensive simulations may
-help to uncover such patterns.
-
+Finally, while  $\xi/\xi_0$ across the regions also largely followed patterns seen in the neutral window proximal to the selected region, a closer look across the 200 kb regions yielded no clear patterns. 
+Troughs were slightly apparent for the final generations of some models (models 5 and 7), but the stochasticity between windows for $\xi/\xi_0$ swamped any other patterns that might otherwise be evident.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%across 200kb region
+While general trends in diversity and comparisons to equilibrium theory highlight that the combined process of demography and linked selection is complex, data from a single window is insufficient to distinguish between the effects of these processes.
+Surveying diversity across neutral windows varying in recombination distance from the selected region, however, provides some insight into the temporal and spatial impacts of both the direct and indirect effects of population size change. 
+
+
+
+\subsection{Comparisons to empirical data}
+
+One of the motivations for the work presented here is the fact that empirical analyses evaluating the impact of demography on linked selection have come to conflicting conclusions \citep{torres2018human, beissinger2016recent}.
+Cultivated maize, for example, is thought to have undergone a bottleneck during the process of domestication \citep{eyre1998investigation,tenaillon2004selection,wright2005effects}, followed by a substantial expansion to a modern size several orders of magnitude larger than its wild ancestor teosinte \citep{beissinger2016recent, bellon2018evolutionary}.
+A recent analysis of linked selection in  maize and teosinte found differences interpreted to be due to the timing of these demographic events.
+\citet{beissinger2016recent} found that $\pi/\pi_0$ exhibited a greater trough around selected sites in teosinte, consistent with this taxon's larger long-term $N_e$.
+However, their analysis of $\xi/\xi_0$ found the opposite pattern --- stronger effects in maize than teosinte --- a result the authors interpreted as a reflection of the post-domestication expansion and increased efficacy of selection in domesticated maize in the recent past.
+
+Human demographic history appears at least qualitatively similar to that of maize, with a bottleneck associated with migration out of Africa followed by considerable recent population expansion \citep{tennessen2012evolution}.
+In spite of this, however, analysis of linked selection in humans produced different results \citep{torres2018human}.
+As in maize, the bottlenecked European population was found to have lower $\pi/\pi_0$ than African populations.
+But unlike maize, the authors find similarly low values of $\xi/\xi_0$, and interpret both results as consistent with decreased efficacy of selection due to the out-of-Africa bottleneck.
+
+While there are a number of challenges associated with accurate estimation of historical demography in empirical systems \citex{}, our models highlight the fact that  results seen in both maize and humans are plausible  under even relatively simple models broadly consistent with the dynamics of these two systems.
+Under our model of bottleneck and expansion (Figure \ref{fig:3new}), for example, sampling in the present (generation 0) returns results similar to those seen in maize, with $\pi/\pi_0$ higher than a constant-size reference population but $\xi/\xi_0$ showing lower values due to the increased efficacy of selection in the expanding population.
+Yet a sample taken anytime between generation -0.8 and -0.2 would reveal the observed pattern in humans, with both larger $\pi/\pi_0$ and $\xi/\xi_0$ still reflecting the impacts of the more recent bottleneck.
+
+% TEXT HERE EXPLAINING
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Here be dragons}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models
 %models2-3
 While the effects of BGS should be attenuated in populations with lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
@@ -391,6 +373,13 @@ $\pi/\pi_0$ eventually reaching a value close to its
 expectation (Figure 2; dotted lines). Although we foresee no reason why
 this prediction should not hold true, more extensive simulations will be
 necessary to confirm this.
+
+Since $\xi/\xi_0$ is already less affected (and, thus, closer
+to 1) than $\pi/\pi_0$ because BGS perturbs common frequency
+bins of the SFS more than rare ones [57], any signal using rare
+frequency bins will be inherently more difficult to capture across
+differing magnitudes of BGS. However, more extensive simulations may
+help to uncover such patterns.
 
 %models5-12
 % While the population expansion eventually did have an effect on
@@ -569,14 +558,6 @@ reconcile the qualitatively different observations yielded by previous
 studies [20,51] (discussed further below).
 
 
-%Comparison to empirical data:
-Although we vary the time length of the contraction and expansion events (see Table 1), these bottleneck-expansion models qualitatively match the demography of previous empirical studies investigating the impact of BGS in dynamic populations [20,51].
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusion}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Recently, two empirical investigations into the joint impacts of
 demography and selection at linked sites in the context of BGS yielded
 interesting and intuitive, albeit contradictory, observations.
@@ -692,6 +673,26 @@ uncover the action of natural selection by comparing sites within the
 genome since, even when controlling for the strength of BGS itself,
 frequencies of neutral sites may still be at different relative levels
 depending on the recent demographic history of the population.
+
+
+
+Thus, the
+impact of population contractions on mitigating the effects of BGS
+resulted in larger shifts of $\pi/\pi_0$ in regions of the
+genome already under the strongest amount of BGS.
+This makes sense since regions farther removed from loci under purifying selection (i.e., under weaker effects of BGS) have values of $\pi/\pi_0$ closer to the neutral expectation of 1.
+Thus, the upper bound for change in $\pi/\pi_0$ will be more limited there compared to regions more
+proximal to a selected locus.
+This provided further evidence for the dominant effects of
+drift and allelic loss on driving the initial decrease in
+$\pi/\pi_0$ immediately following a population contraction,
+which should have unbiased effects across all bins within the trough.
+During the subsequent recovery to higher values of $\pi/\pi_0$, we saw smaller differences arise
+between the nearest and farthest 10 kb bins, demonstrating the expected
+weakening effects of BGS following a population decline. This weakening
+of the trough structure was also most apparent for model 3, with
+patterns of $\pi/\pi_0$ appearing essentially flat across the
+200 kb region in the final generation (Figure S11).
 
 \section{Acknowledgments}
 
