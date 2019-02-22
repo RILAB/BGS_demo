@@ -254,9 +254,6 @@ Yet these general patterns obscure more subtle changes in the slope of $\pi/\pi_
 In models with a stronger bottleneck (models 2,3,6 and 8), where we expect the efficacy of selection to be most impacted, we see that the slope $\pi/\pi_0$ flattens over time, completely erasing the trough of diversity in the most extreme cases without recovery (models 2-3). 
 
 
-
-
-
 \begin{figure}[]
 \includegraphics[width=\linewidth]{figures/FigS13.pdf}
 \caption{Relative diversity ($\pi/\pi_0$) and singleton density ($\xi/\xi_0$) through time for demographic model 5 measured across a neutral 200 kb region under the effects of BGS.
@@ -274,11 +271,72 @@ Troughs were slightly apparent for the final generations of some models (models 
 \section{Discussion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{General patterns of diversity}
 
-%across 200kb region
+%%% Response of diversity to demography \citex and BGS \citex in isolation reasonably well understood.
+(explain)
+We show here that neither of these explains well the combined action of both.
+
+%%% In each of our models, the first effects we see are due to demography, and fit well with expectations.
+(explain)
+This is why we see it happen equally across the whole region initially 
+While the effects of BGS should be attenuated in populations wd3ith lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
+Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
+These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
+
+%%% But effects happen faster for region under BGS.
+Can think of this as Ne effect (better explanation?)
+The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], which has been observed to increase sensitivity to drift for populations experiencing recent bottlenecks [51] (though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]).
+ Intuitively, these faster approaches to new equilibrium levels under BGS in response to size changes make sense if we consider the fact that the distance between initial and final equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another  under BGS when compared to neutrality (Figure S6; Table 2-3). 
+This  provided a potential explanation for why we observed the specific dynamics of $\pi/\pi_0$ immediately following a size change.
+This argument likely does not hold for model 4 because, due to itc higher $N_e$, it is unlikely that equilibrium has yet been reached. However, the observation of an increase in $\pi/\pi_0$ for model 4 did provide supporting evidence that a
+ faster approach to equilibrium under BGS still existed under an
+ expansion model. 
+ Indeed, moderl 4 $\pi$ under BGS changed more quickly than
+ under neutrality (Figure S9).
+Observations of the dominant impact of genetic drift and weakened BGS
+following a population reduction were also apparent when measuring
+patterns of $\pi/\pi_0$ in models that had a more sustained
+contraction (i.e., models 7 and 8). There, a decline in
+$N_e$ was sustained for an additional 0.5
+$N_{anc}$ generations before the expansion event began
+(Figure S2). For these models, the rise of $\pi/\pi_0$
+resulting from weakened BGS occurred more quickly than for their
+counterpart models with an immediate expansion (Figure S3). For example,
+the inflection point at which $\pi$ under BGS surpassed $\pi$ under neutrality
+occurred at -0.305 and -0.848 $N_{anc}$ generations
+for models 7 and 8, respectively (Figure S7). For models 5 and 6, these
+inflection points occurred later in time at -0.235 and -0.785
+$N_{anc}$ generations, respectively. Further, the
+final $\pi/\pi_0$ values for models 7 and 8 were 0.643 and
+0.887 but for models 5 and 6, they were only 0.631 and 0.860. Thus, the
+sustained lower $N_e$ of models 7 and 8 aided in
+accelerating the approach to the new equilibrium established by
+population reduction. This provided further evidence for the dominant
+role that population bottlenecks have for patterns of diversity under
+BGS, even when populations expand past their ancestral size.
+
+%%% After some time, however, the reduced efficacy of selection takes over. 
+$\pi/\pi_0$ starts increasing for bnecks, decreasing for expansion
 While general trends in diversity and comparisons to equilibrium theory highlight that the combined process of demography and linked selection is complex, data from a single window is insufficient to distinguish between the effects of these processes.
 Surveying diversity across neutral windows varying in recombination distance from the selected region, however, provides some insight into the temporal and spatial impacts of both the direct and indirect effects of population size change. 
 
+%%% Thus the effect seen depends on time since demography in units of N generations.
+
+%%% Why not hit classical equilibrium. 
+1) time 2) However, we note that this expectation underestimated $\pi/\pi_0$ for model 3 because the threshold of $s < 0.15/2N_e$ was likely not conservative enough to ignore deleterious mutations that behave neutrally under the low $N_e$ size of 400 for that model.
+
+
+%%% Everything faster with $\xi$.
+Each of these dynamics occurred more quickly for $\xi/\xi_0$, which was expected since approaches to equilibrium are more rapid for rare variants relative to common variants.
+Thus, despite the demographic change resulting in immediate decreases to $\xi/\xi_0$ and $\pi/\pi_0$, patterns of relative diversity in populations suffering a contraction eventually approached their expected higher equilibrium values under weakened BGS, with rates dependent on the frequency of the alleles being observed and the  magnitude of the population reduction. 
+This was evident from the fact that the final $\pi/\pi_0$ values for models 2 and 3 were
+Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency bins of the SFS more than rare ones [57], any signal using rare frequency bins will be inherently more difficult to capture across differing magnitudes of BGS. However, more extensive simulations may help to uncover such patterns.
+Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency
+bins of the SFS more than rare ones [57], any signal using rare
+frequency bins will be inherently more difficult to capture across
+differing magnitudes of BGS. However, more extensive simulations may
+help to uncover such patterns.
 
 
 \subsection{Comparisons to empirical data}
@@ -308,235 +366,41 @@ Yet a sample taken anytime between generation -0.8 and -0.2 would reveal the obs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models
 %models2-3
-While the effects of BGS should be attenuated in populations with lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
-Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
-These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
-The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], which has been observed to increase sensitivity to drift for populations experiencing recent bottlenecks [51] (though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]).
-These patterns were made evident when observing the more rapid relative decrease in diversity in our selection models with BGS versus neutrality.
+%These patterns were made evident when observing the more rapid relative decrease in diversity in our selection models with BGS versus neutrality.
 % When compared to their initial equilibrium starting points, $\pi$ under BGS suffered faster rates of loss compared to the neutral case for both models (Figure S9), with the fastest rates of loss accompanying larger reductions in $N_e$ (i.e., model 3).
-Importantly, these results demonstrated that classical models that predict the impact of BGS on $\pi/\pi_0$, such as the Nordborg model, implicitly assume an equilibrium population at  mutation-selection balance [58] and are inappropriate for predicting true patterns of genetic diversity for populations that have udnergone recent size changes.
-
- These dynamics occurred more quickly for
-$\xi/\xi_0$, which was expected since approaches to equilibrium
-are more rapid for rare variants relative to common variants.
-Additionally, the approaches to equilibrium occurred fastest for model
-3, which also suffered the larger population size reduction (Figure 1).
-This faster approach was also not unexpected since, in general, the time
-to equilibrium is scaled by $N_e$ [28,58] and
-changes resulting in smaller $N_e$ (e.g., model 3)
-should also result in shorter times towards new population equilibria.
-Thus, despite the demographic change resulting in immediate decreases to
-$\xi/\xi_0$ and $\pi/\pi_0$, patterns of relative
-diversity in populations suffering a contraction eventually approached
-their expected higher equilibrium values under weakened BGS, with rates
-dependent on the frequency of the alleles being observed and the
-magnitude of the population reduction. This was evident from the fact
-that the final $\pi/\pi_0$ values for models 2 and 3 were
-within close approximation of the Nordborg model. However, we note that
-this expectation underestimated $\pi/\pi_0$ for model 3 because
-the threshold of $s < 0.15/2N_e$
-was likely not conservative enough to ignore deleterious mutations that
-behave neutrally under the low $N_e$ size of 400 for
-that model.
-
+%Importantly, these results demonstrated that classical models that predict the impact of BGS on $\pi/\pi_0$, such as the Nordborg model, implicitly assume an equilibrium population at  mutation-selection balance [58] and are inappropriate for predicting true patterns of genetic diversity for populations that have udnergone recent size changes.
 
 %model4
-The latter pattern occurred despite the
-expectation of a decrease in $\pi/\pi_0$ from the Nordborg
-model, which would have been generated by more efficient purifying
-selection accompanying a larger $N_e$.
 
-The more sensitive and rapid response to population increase under BGS
-recapitulated the faster approaches to equilibrium that were exhibited
-in the contraction models. Intuitively, these faster approaches to new
-equilibrium levels under BGS in response to size changes make sense if
-we consider the fact that the distance between initial and final
-equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another
-under BGS when compared to neutrality (Figure S6; Table 2-3). This
-provided a potential explanation for why we observed the specific
-dynamics of $\pi/\pi_0$ immediately following a size change.
-This argument likely does not hold for model 4 because, due to its
-higher $N_e$, it is unlikely that equilibrium has
-yet been reached. However, the observation of an increase in
-$\pi/\pi_0$ for model 4 did provide supporting evidence that a
-faster approach to equilibrium under BGS still existed under an
-expansion model. Indeed, moderl 4 $\pi$ under BGS changed more quickly than
-under neutrality (Figure S9). Presumably, this also indicates that $\pi$
-under BGS will reach a new equilibrium first, at which point
-$\pi/\pi_0$ will begin a downward trajectory in response to $\pi$
-continuing to increase under neutrality but $\pi$ under BGS remaining at a
-constant equilibrium. This is a likely outcome if the qualitative
-changes in $\xi/\xi_0$ foreshadow the future dynamics of
-$\pi/\pi_0$. The end result would also include a decrease in
-$\pi/\pi_0$ relative to its initial starting point, with
-$\pi/\pi_0$ eventually reaching a value close to its
-expectation (Figure 2; dotted lines). Although we foresee no reason why
-this prediction should not hold true, more extensive simulations will be
-necessary to confirm this.
+%The more sensitive and rapid response to population increase under BGS
+%recapitulated the faster approaches to equilibrium that were exhibited
+%in the contraction models. Intuitively, these faster approaches to new
+%equilibrium levels under BGS in response to size changes make sense if
+%we consider the fact that the distance between initial and final
+%equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another
+%under BGS when compared to neutrality (Figure S6; Table 2-3). This
+%provided a potential explanation for why we observed the specific
+%dynamics of $\pi/\pi_0$ immediately following a size change.
+%This argument likely does not hold for model 4 because, due to its
+%higher $N_e$, it is unlikely that equilibrium has
+%yet been reached. However, the observation of an increase in
+%$\pi/\pi_0$ for model 4 did provide supporting evidence that a
+%faster approach to equilibrium under BGS still existed under an
+%expansion model. Indeed, moderl 4 $\pi$ under BGS changed more quickly than
+%under neutrality (Figure S9). Presumably, this also indicates that $\pi$
+%under BGS will reach a new equilibrium first, at which point
+%$\pi/\pi_0$ will begin a downward trajectory in response to $\pi$
+%continuing to increase under neutrality but $\pi$ under BGS remaining at a
+%constant equilibrium. This is a likely outcome if the qualitative
+%changes in $\xi/\xi_0$ foreshadow the future dynamics of
+%$\pi/\pi_0$. The end result would also include a decrease in
+%$\pi/\pi_0$ relative to its initial starting point, with
+%$\pi/\pi_0$ eventually reaching a value close to its
+%expectation (Figure 2; dotted lines). Although we foresee no reason why
+%this prediction should not hold true, more extensive simulations will be
+%necessary to confirm this.
 
-Since $\xi/\xi_0$ is already less affected (and, thus, closer
-to 1) than $\pi/\pi_0$ because BGS perturbs common frequency
-bins of the SFS more than rare ones [57], any signal using rare
-frequency bins will be inherently more difficult to capture across
-differing magnitudes of BGS. However, more extensive simulations may
-help to uncover such patterns.
 
-%models5-12
-% While the population expansion eventually did have an effect on
-% increasing $\pi$ under both BGS and neutrality after the initial reduction
-% in size, this increase occurred at a higher relative rate under BGS and
-% was further accelerated by larger reductions in population size. This is
-% evident in Figure \ref{Fig:S7} where we compared $\pi$ relative to its initial value
-% through time. There, we observed a sharper increase in $\pi$ under BGS
-% following its minimum point for model 6 when compared to model 5.
-% However, for both models, the faster rate of recovery of $\pi$ under BGS in
-% response to the expansion also ensured that $\pi/\pi_0$
-% continued to remain higher in later generations. So while bottlenecks
-% led to a sharper rate of decrease in $\pi$ under BGS when compared to
-% neutrality, they also aided in a faster rate of recovery during the
-% expansion, thereby leading to an increase in $\pi/\pi_0$ in the
-% face of growth and mimicking patterns evident for models with no
-% expansion. The fact that the approach to higher $\pi/\pi_0$
-% occurred \emph{despite} the increasing population size of both
-% demographic models clearly demonstrated that patterns of
-% $\pi/\pi_0$ were primarily being driven in response to earlier
-% demographic events (i.e., the initial population contraction). Yet the
-% stronger action of BGS in response to population expansion should
-% eventually arise for both models and is suggested by the decreasing $\pi$/$\pi_0$ predicted by the Nordborg model (Figure 3; dotted
-% lines). Such patterns may take much longer to manifest than the time
-% span we have simulated here if approaches to equilibrium take on the
-% order of $4N_e$ generations [28,58].
-
-Observations of the dominant impact of genetic drift and weakened BGS
-following a population reduction were also apparent when measuring
-patterns of $\pi/\pi_0$ in models that had a more sustained
-contraction (i.e., models 7 and 8). There, a decline in
-$N_e$ was sustained for an additional 0.5
-$N_{anc}$ generations before the expansion event began
-(Figure S2). For these models, the rise of $\pi/\pi_0$
-resulting from weakened BGS occurred more quickly than for their
-counterpart models with an immediate expansion (Figure S3). For example,
-the inflection point at which $\pi$ under BGS surpassed $\pi$ under neutrality
-occurred at -0.305 and -0.848 $N_{anc}$ generations
-for models 7 and 8, respectively (Figure S7). For models 5 and 6, these
-inflection points occurred later in time at -0.235 and -0.785
-$N_{anc}$ generations, respectively. Further, the
-final $\pi/\pi_0$ values for models 7 and 8 were 0.643 and
-0.887 but for models 5 and 6, they were only 0.631 and 0.860. Thus, the
-sustained lower $N_e$ of models 7 and 8 aided in
-accelerating the approach to the new equilibrium established by
-population reduction. This provided further evidence for the dominant
-role that population bottlenecks have for patterns of diversity under
-BGS, even when populations expand past their ancestral size.
-
-It is possible that the expansion itself has contributed to the rise in
-$\pi/\pi_0$ for models 5-8, as was seen for model 4. However,
-this is unlikely to be the case because the rise in $\pi/\pi_0$
-occurred fastest for models 7 and 8, which had a delayed onset of
-expansion. Second, this rise occurred faster still for models 2 and 3,
-which had no expansion in size. There, the inflection point at which $\pi$
-under BGS surpassed $\pi$ under neutrality occurred at -0.44 and -0.865
-$N_{anc}$ generations for models 2 and 3, respectively
-(Figure S9). Rather, the population expansion of models 5-8 appeared to
-retard the approach to equilibrium in response to their size reductions,
-thus preventing $\pi/\pi_0$ from attaining higher values. When
-comparing each respective model's maximum $\pi/\pi_0$, we
-observed that models 2 and 3 both had the highest values given their
-respective population reductions to 2,000 and 400 individuals
-($\pi/\pi_0$ = 0.738 and 0.972, respectively; Figure 1). This
-was followed by models 7 and 8 ($\pi/\pi_0$ = 0.644 and 0.887,
-respectively) and finally, by models 5 and 6 ($\pi/\pi_0$ =
-0.631 and 0.861, respectively; Figure 3). Thus, those models
-experiencing the shortest amount of time at reduced population sizes saw
-the lowest rises in $\pi/\pi_0$. For models 5-8, though,
-$\pi/\pi_0$ was still approaching higher values since these
-models were not at equilibrium after 1.0 $N_{anc}$
-generations. It is likely that $\pi/\pi_0$ for these models
-would attain even higher values if their demographic histories were
-extended.
-
-In contrast to $\pi$, the loss and gain of $\xi$ and change to
-$\xi/\xi_0$ in response to the bottleneck-expansion models was
-much more rapid and dynamic through time. This was expected since rare
-variants (e.g., singletons) are more likely to be lost during a
-contraction, and during an expansion injection of new mutations fill
-these bins in the SFS first. For models 5 and 6, we witnessed a very
-brief dip in $\xi/\xi_0$, resulting from a greater relative
-decrease in $\xi$ under BGS when compared to neutrality (Figure 3; Figure
-S7). Following this dip, $\xi$ under BGS increased at a relatively faster
-rate than $\xi$ under neutrality, resulting in a higher $\xi/\xi_0$
-relative to their initial values (Figure S7). Similar patterns were also
-seen for models 7 and 8 (Figure S3, Figure S7). Qualitatively, these
-first directional changes in $\xi/\xi_0$ matched those of
-$\pi/\pi_0$, but occurred over a much shorter time span. These
-changes were likely a consequence of regime change from the dominance of
-genetic drift immediately following the population reduction to the
-dominance of weakened BGS from a reduced $N_e$. This
-was previously exhibited by models 2 and 3 and additional evidence for
-this was provided by the observation that changes in the magnitude of
-$\xi/\xi_0$ were greater for model 6 and model 8 than for model
-5 and model 7 (i.e., greater for models suffering larger reductions in
-$N_e$).
-
-Because the dynamics of rare variants are more sensitive to demography,
-we also witnessed another change in the direction of
-$\xi/\xi_0$ that was not observed for $\pi/\pi_0$.
-Following an increase in $\xi/\xi_0$ above its initial point
-from weakened BGS, we saw a decrease later in time, with
-$\xi/\xi_0$ falling below that initial point by -0.2
-$N_{anc}$ generations (Figure 3, Figure S3). This last
-decrease in $\xi/\xi_0$ could not have resulted from an
-increased sensitivity to drift because the population sizes were larger
-during this phase of the demography (79,636 $N_e$
-and 57,722 $N_e$ at -0.2 $N_{anc}$
-generations for models 5 and 6, respectively). Rather, BGS appeared to
-act more strongly in these later generations and, thus, limited $\xi$
-relative to its value under neutrality. Supporting this, we observed a
-slower rate of increase in $\xi$ under BGS towards the very end of the
-expansion for models 5-8 (Figure S4; Figure S7). Finally, we observed
-that the final $\xi/\xi_0$ value for model 5 was lower than for
-model 6 (0.881 vs. 0.893) and the final $\xi/\xi_0$ value for
-model 7 was lower than for model 8 (0.879 vs. 0.896) (Figure S3). This
-may have resulted from the fact that models 5 and 7 had higher long term
-$N_e$ and experienced a concomitantly stronger
-amount of BGS throughout their history due to their shallower population
-bottlenecks.
-
-We also ran a set of simulations with demographic histories simulating
-the effects of more recent bottlenecks on patterns of
-$\pi/\pi_0$ and $\xi/\xi_0$ (models 9-12; Figure S2).
-These models were similar to models 5-8, with identical starting and
-ending population sizes and population size reductions. For these
-models, we observed similar patterns in response to the population
-reductions seen in the previous models. In all cases,
-$\pi/\pi_0$ suffered a decrease, which was once again in
-contrast to the expectation given by the Nordborg model (Figure S3).
-Also similar to the previous models, $\xi/\xi_0$ for models
-9-12 suffered a transient decrease followed by a recovery over its initial value.
-For models 9 and 10, which both had an immediate
-expansion following their size reductions, the magnitude of loss for $\pi$
-and $\xi$ was less than for their counterpart models -- models 5 and 6
-(compare Figure S4 to Figure S5). This result likely stemmed from the
-higher rate of population growth necessary to end at a size of 200,000
-individuals over the course of 0.1 $N_{anc}$
-generations for models 9 and 10, which mitigated the greater loss of $\pi$
-and $\xi$ exhibited by models 5 and 6. Additionally, the decrease in
-$\pi/\pi_0$ was less for models 9 and 10 when compared to
-models 5 and 6. After 0.1 $N_{anc}$ generations,
-$\pi/\pi_0$ was 0.545 and 0.492 for models 5 and 6,
-respectively but 0.573 and 0.541 for models 9 and 10, respectively
-(Figure S3). This demonstrated the effects of the greater rate of
-expansion on limiting the sensitivity to drift in regions of BGS.
-Further, for models 11 and 12, which had a delayed expansion, measures
-of $\pi/\pi_0$ were also lower than for models 9 and 10 after
-$0.1N_{anc}$ generations, exhibiting values of 0.542
-and 0.527, respectively (Figure S3). These models also clearly
-demonstrated the feature of $\xi$ under BGS not only declining more quickly
-in magnitude immediately following the population contraction but also
-recovering more quickly once it reached its minimum, thus displaying the
-more rapid behavior characteristic of patterns of diversity under the
-effects of BGS and demography. Specifically, when comparing $\xi$ under BGS
-to $\xi$ under neutrality, $\xi$ under BGS in the final generation was
 relatively higher than its initial value (Figure S8). This caused the
 elevated $\xi/\xi_0$ exhibited in the final generation of
 models 9-12 (Figure S3).
