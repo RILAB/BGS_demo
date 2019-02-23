@@ -132,7 +132,7 @@ Fitness followed a purely additive model in which the fitness effect of an allel
 Per base pair mutation and recombination rates also followed those of \citet{torres2018human} and were $1.66 \times 10^{-8}$ and $8.2 \times 10^{-10}$, respectively.
 We also included a 200 kb neutral locus directly flanking the 2 Mb deleterious locus in order to observe the effects of BGS on neutral diversity.
 For all simulations, we simulated a burn-in period for 10N generations with an initial population size of 20,000 individuals before simulating under 12 specific demographic models.
-The demographic models included one demographic model of a constant sized population (model 1) and eleven non-equilibrium demographic models incorporating both bottlenecks and expansion (models 2-12; Figures \ref{supp:models1}-\ref{supp:models2}; Table \ref{table:params}).
+The demographic models included one demographic model of a constant sized population (model 1) and eleven non-equilibrium demographic models incorporating both bottlenecks and expansion (models 2-12; Figures \ref{fig:models1}-\ref{fig:models1}; Table \ref{table:params}).
 For each demographic model, we also conducted an identical set of neutral simulations without BGS by simulating only the 200 kb neutral locus.
 Each model scenario was simulated 5,000 times.
 
@@ -248,7 +248,7 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \subsection{Patterns of diversity across the 200 kb neutral region}
 
 We also measured patterns of $\pi/\pi_0$ across time for the entire 200 kb neutral region.
-Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the focal locus under selection (model 5 shown in  \ref{fig:200kb}, see Figure \ref{fig:S912} for all models).
+Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the focal locus under selection (model 5 shown in  \ref{fig:200kb}, see Figure \ref{fig:all200} for all models).
 Change in $\pi/\pi_0$ over time generally followed patterns observed in the neutral window closest to the selected region.
 In all of our ancient bottleneck models (models 2-8), for example, we see a decline in $\pi/\pi_0$ across the entire region followed by an increase to levels higher than in the ancestral population, while for recent bottlenecks (models 9-12) we see a consistent decline with no recovery and in our simple expansion model (model 4) $\pi/\pi_0$ increases monotonically through time.
 
@@ -351,14 +351,12 @@ However, their analysis of $\xi/\xi_0$ found the opposite pattern --- stronger e
 
 Human demographic history appears at least qualitatively similar to that of maize, with a bottleneck associated with migration out of Africa followed by considerable recent population expansion \citep{tennessen2012evolution}.
 In spite of this, however, analysis of linked selection in humans produced different results \citep{torres2018human}.
-As in maize, the bottlenecked European population was found to have lower $\pi/\pi_0$ than African populations.
-But unlike maize, the authors find similarly low values of $\xi/\xi_0$, and interpret both results as consistent with decreased efficacy of selection due to the out-of-Africa bottleneck.
+The bottlenecked European population was found to have lower $\pi/\pi_0$ and $\xi/\xi_0$ than African populations, which the authors interpret as the effects of demography exacerbating the loss of diversity in regions affected by BGS.
 
 While there are a number of challenges associated with accurate estimation of historical demography in empirical systems \citex{}, our models highlight the fact that  results seen in both maize and humans are plausible  under even relatively simple models broadly consistent with the dynamics of these two systems.
 Under our model of bottleneck and expansion (Figure \ref{fig:3new}), for example, sampling in the present (generation 0) returns results similar to those seen in maize, with $\pi/\pi_0$ higher than a constant-size reference population but $\xi/\xi_0$ showing lower values due to the increased efficacy of selection in the expanding population.
-Yet a sample taken anytime between generation -0.8 and -0.2 would reveal the observed pattern in humans, with both larger $\pi/\pi_0$ and $\xi/\xi_0$ still reflecting the impacts of the more recent bottleneck.
+Yet a sample taken anytime within $\approx 0.1N_anc$ generations after the bottleneck would reveal the observed pattern in humans, with both lower $\pi/\pi_0$ and $\xi/\xi_0$ still reflecting the impacts of the recent bottleneck.
 
-% TEXT HERE EXPLAINING
 
 
 
@@ -579,7 +577,7 @@ Demographic model 2 experiences a population contraction to 2000 individuals whi
 Demographic model 4 experiences a population expansion to 40,000 individuals.
 All population size changes are instantaneous for models 2-4.
 See Table \ref{table:params} for additional model parameters.}
-\label{fig:S1}
+\label{fig:models1}
 \end{figure*}
 \pagebreak
 
@@ -590,7 +588,7 @@ Time proceeds forward from left to right and is scaled by the $N_e$ of the popul
 Demographic models with a shallow bottleneck (models 5, 7, 9, and 11) experience a population contraction to 2000 individuals while demographic models with a deep bottleneck (models 6, 8, 10, and 12) experience a population contraction to 400 individuals.
 After contraction, demographic models 5-12 undergo exponential growth to a final population size of 200,000 individuals.
 See Table \ref{table:params} for additional model parameters.}
-\label{fig:S2}
+\label{fig:models2}
 \end{figure*}
 \pagebreak
 
@@ -715,9 +713,9 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 The genetic distance of each 10 kb bin from the selected locus is indicated on the x-axes, with genetic distance increasing from left to right.
 Each line measuring $\pi/\pi_0$ and $\xi/\xi_0$ across the 200 kb neutral region represents a specific generation of the demographic model (401 discrete generations for demographic models 2-8, 41 discrete generations for demographic models 9-12).
 Specific generations are indicated by the color of the demographic model at the top of each figure (time is scaled as in Figure \ref{fig:s6}) and in the figure legend.
-When necessary, multiple plots are given fori $\pi/\pi_0$ and $\xi/\xi_0$ in order to prevent overlap of the measurements between generations (see legend for specific generations covered in each plot).
+When necessary, multiple plots are given for $\pi/\pi_0$ and $\xi/\xi_0$ in order to prevent overlap of the measurements between generations (see legend for specific generations covered in each plot).
 Blue dashed lines and red dashed lines indicate the first generation and last generation measured, respectively, for each specific plot.}
-\label{fig:S912}
+\label{fig:all200}
 \end{figure}
 \pagebreak
 
