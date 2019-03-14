@@ -152,16 +152,25 @@ Additionally, in order to properly model our simulations, we only calculated the
 This resulted in the following modified equation:
 
 
-\begin{eqnarray*}
-\begin{aligned}
-\frac{N_e}{N}\equiv\frac{\pi}{\pi_0}= \\
-exp\left( -\frac{U_T}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r(z)(1-s)/s]^2}\bigg\}\Gamma(s,\alpha_T,\beta_T)ds \right)\times \\
-    exp\left( -\frac{U_B}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r(z)(1-s)/s]^2}\bigg\}\Gamma(s,\alpha_B,\beta_B)ds \right)
-    \end{aligned}
-\end{eqnarray*}
+\begin{equation*}
+    \frac{N_e}{N}\equiv\frac{\pi}{\pi_0}=f(U_T,\alpha_T,\beta_T)\times f(U_B,\alpha_B,\beta_B) \\
+\end{equation*}
+    
+The left side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{torgerson2009evolutionary} (represented by $\Gamma(s,\alpha_T,\beta_T)$) and the right side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{boyko2008assessing} (represented by $\Gamma(s,\alpha_B,\beta_B)$).
+Each of these is modeled following:
+
+\begin{equation*}
+    \begin{align}
+        f(U,\alpha,\beta)=\\
+    exp\left( -\frac{U}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r(z)(1-s)/s]^2}\bigg\}\Gamma(s,\alpha,\beta)ds \right)\\
+    \end{align}
+\end{equation*}
+    
+  %  exp\left( -\frac{U_B}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r(z)(1-s)/s]^2}\bigg\}\Gamma(s,\alpha_B,\beta_B)ds \right)
+  %  \end{aligned}
+%\end{eqnarray*}
 
 Here, $R$ is the total length of the selected locus in bp, $U$ is the total deleterious mutation rate across the selected locus, $r(z)$ is the genetic map distance between a neutral site and a deleterious mutation, and $s$ is the selection coefficient of a deleterious mutation.
-The left side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{torgerson2009evolutionary} (represented by $\Gamma(s,\alpha_T,\beta_T)$) and the right side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{boyko2008assessing} (represented by $\Gamma(s,\alpha_B,\beta_B)$).
 
 Because $N_e$ is not explicitly included in this model of BGS, we followed previous work \citep{charlesworth2012role, comeron2014background} in truncating selection at some value $C$,
 such that $C = \gamma/2N_e$ (represented in the integral $\int^{\infty}_C$).
