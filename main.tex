@@ -287,66 +287,41 @@ Despite these efforts, there are no formal theoretical treatments describing exp
 Notably, there remains substantial confusion in empirical population genetic analyses, where authors often equate long-term predictions of changes in effective populations size on the efficacy of natural selection to short-term responses under non-equilibrium demography.
 Here, we use exhaustive simulations and analysis of different dmoegraphic models with and without background selection to show that predictions from such equilbirium models generally fail to hold up over shorter time scales, and that the predicted impacts of the combined effects of demography and linked selection depend strongly on the details of the demographic model as well as the timing of sampling.
 
-%%% In each of our models, the first effects we see are due to demography, and fit well with expectations.
-https://en.wikipedia.org/wiki/FAIR_data(explain)
-This is why we see it happen equally across the whole region initially 
-While the effects of BGS should be attenuated in populations wd3ith lower $N_e$ (because the efficacy of purifying selection is weakened), the drop in $\pi/\pi_0$ instead demonstrated that the populations were dominated by the effects of allelic loss, which is expected for populations suffering a strong bottleneck.
-Additionally, more rapid effects were observed for model 3s despite the fact that the expectation of $\pi/\pi_0$ for model 3 was actually higher than for model 2.
-These observations made it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by the increased sensitivity of allelic loss within these regions -- with greater rates of loss accompanying greater reductions in population size.
+In each of our models, the initial effects observed are dominated by demography alone, and fit well with theoretical expectations.
+Loss of diversity in the first few generations occurs equally across the entire region, independent of the distance from the selected region.
+While equilibrium models predict that the effects of BGS should be attenuated in populations with lower $N_e$ due to the decreased efficacy of purifying selection, we instead observed a drop in $\pi/\pi_0$  after the bottleneck, and a greater loss in models with a stronger bottleneck \jri{cite some figs}, demonstrating that the populations were dominated by the effects of allelic loss.
+These observations make it clear that effects of BGS on $\pi/\pi_0$ immediately following a reduction in $N_e$ were not driven by a change in the efficacy of natural selection from population decline, but rather by allelic loss within these regions.
+Similarly, while theory predicts a decrease in $\pi/\pi_0$ in expanding populations, we see the initial response is instead an increase\jri{cite figs}.
 
-%%% But effects happen faster for region under BGS.
-Can think of this as Ne effect (better explanation?)
-The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], which has been observed to increase sensitivity to drift for populations experiencing recent bottlenecks [51] (though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]).
- Intuitively, these faster approaches to new equilibrium levels under BGS in response to size changes make sense if we consider the fact that the distance between initial and final equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another  under BGS when compared to neutrality (Figure S6; Table 2-3). 
-This  provided a potential explanation for why we observed the specific dynamics of $\pi/\pi_0$ immediately following a size change.
-This argument likely does not hold for model 4 because, due to itc higher $N_e$, it is unlikely that equilibrium has yet been reached. However, the observation of an increase in $\pi/\pi_0$ for model 4 did provide supporting evidence that a
- faster approach to equilibrium under BGS still existed under an
- expansion model. 
- Indeed, moderl 4 $\pi$ under BGS changed more quickly than
- under neutrality (Figure S9).
-Observations of the dominant impact of genetic drift and weakened BGS
-following a population reduction were also apparent when measuring
-patterns of $\pi/\pi_0$ in models that had a more sustained
-contraction (i.e., models 7 and 8). There, a decline in
-$N_e$ was sustained for an additional 0.5
-$N_{anc}$ generations before the expansion event began
-(Figure S2). For these models, the rise of $\pi/\pi_0$
-resulting from weakened BGS occurred more quickly than for their
-counterpart models with an immediate expansion (Figure S3). For example,
-the inflection point at which $\pi$ under BGS surpassed $\pi$ under neutrality
-occurred at -0.305 and -0.848 $N_{anc}$ generations
-for models 7 and 8, respectively (Figure S7). For models 5 and 6, these
-inflection points occurred later in time at -0.235 and -0.785
-$N_{anc}$ generations, respectively. Further, the
-final $\pi/\pi_0$ values for models 7 and 8 were 0.643 and
-0.887 but for models 5 and 6, they were only 0.631 and 0.860. Thus, the
-sustained lower $N_e$ of models 7 and 8 aided in
-accelerating the approach to the new equilibrium established by
-population reduction. This provided further evidence for the dominant
-role that population bottlenecks have for patterns of diversity under
-BGS, even when populations expand past their ancestral size.
+Although the initial changes in diversity are dominated by the impacts of demography, as population size shifts the efficacy of natural selection begins to change as well.
+In our simple bottleneck models, for example,  $\pi/\pi_0$ stops declining and begins to increase, eventually reaching higher values as epxected under equilibrium \jri{cite figures}.
+This change reflects the inability of a smaller population to effectively select against new deleterious mutations, rendinerg such alleles effectively neutral \jri{refs}.
+These effects are presumably why we see the rate of increase of $\pi/\pi_0$ slow and eventually plateau in models incorporating both bottlenekcs and growth \jri{figures}.
+Changes in the efficacy of selection are also readily observed in comparisons of diversity across neutral windows varying in recombination distance from the selected region \jri{cite figures}.
+Diversity in the ancestral population increases with  distance from the selected regions as expected under classical models of BGS at equilibrium \citex{}. 
+But while the slope of this relationship remains constant in the generations initially following population size change in our simple bottleneck models, it begins to flatten as the lower effective population size changes in the efficacy of natural selection cause the slope to flatten  \jri{cite fig}.
+\jri{where do we discuss fact they don't perfectly hit equilibrium expectations, and that this may be because of our $\gamma$ threshold}
+\jri{can we connect the inflection points of change in Ne? can we say e.g. that the inflection point happens after N_bottleneck gens, then we see increase?}
+%1) time 2) However, we note that this expectation underestimated $\pi/\pi_0$ for model 3 because the threshold of $s < 0.15/2N_e$ was likely not conservative enough to ignore deleterious mutations that behave neutrally under the low $N_e$ size of 400 for that model.
 
-%%% After some time, however, the reduced efficacy of selection takes over. 
-$\pi/\pi_0$ starts increasing for bnecks, decreasing for expansion
-While general trends in diversity and comparisons to equilibrium theory highlight that the combined process of demography and linked selection is complex, data from a single window is insufficient to distinguish between the effects of these processes.
-Surveying diversity across neutral windows varying in recombination distance from the selected region, however, provides some insight into the temporal and spatial impacts of both the direct and indirect effects of population size change. 
+The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]. \jri{Raul please fix citations?}
+Like a reduction in $N_e$, however, BGS exacerbates the stochastic process of drift.
+And because the relevant timescale for allele frequency evolution is scaled by the rate of drift \citex{}, both the reduction and recovery of $\pi/\pi_0$ to equilibrium levels happen over fewer generations in populations with stronger bottlenecks and in regions impacted by BGS.
+We see this borne out in comparisons of models with stronger \jri{figure} or more sustained \jri{figure} bottlenecks, as well as comparisons of models with BGS to their equivalent neutral scenarios \jfir{figure}.
+%For example, the inflection point at which $\pi$ under BGS surpassed $\pi$ under neutrality occurred at -0.305 and -0.848 $N_{anc}$ generations for models 7 and 8, respectively (Figure S7). For models 5 and 6, these inflection points occurred later in time at -0.235 and -0.785 $N_{anc}$ generations, respectively. Further, the final $\pi/\pi_0$ values for models 7 and 8 were 0.643 and 0.887 but for models 5 and 6, they were only 0.631 and 0.860. Thus, the sustained lower $N_e$ of models 7 and 8 aided in accelerating the approach to the new equilibrium established by population reduction. 
+This framework also helps explain the slow changes observed in expanding populations \jri{cite figures}, as increases in the effective size attenuate the rate of drift.
+\jri{do we need concrete numbers here?} 
 
-%%% Thus the effect seen depends on time since demography and the relevant scale is in units of N generations.
+Because singleton variants represent very recent mutations, changes in $\xi/\xi_0$ responded quickly to changes in $N_e$.  
+In our simple expansion model, for example, while $\pi/\pi_0$ never stops increasing, we see a relatively rapid increase in $\xi/\xi_0$, followed by a decrease as a larger population size increases the efficacy of selection against new deleterious mutants. 
+And while theoretical predictions for $\xi/\xi_0$ are not straihtforward \jri{this true? can we cite anyone?}, singleton diversity in the simple expansion model quickly plateaus at a new value below that of the ancestral population, consistent with having reached a new equilibrium value.
+%Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency bins of the SFS more than rare ones [57], any signal using rare frequency bins will be inherently more difficult to capture across differing magnitudes of BGS. However, more extensive simulations may help to uncover such patterns.
 
-%%% Why we don't see pops hit classical equilibrium. 
-1) time 2) However, we note that this expectation underestimated $\pi/\pi_0$ for model 3 because the threshold of $s < 0.15/2N_e$ was likely not conservative enough to ignore deleterious mutations that behave neutrally under the low $N_e$ size of 400 for that model.
-
-%%% Everything happens faster with $\xi$. $\xi$ shows return to equilibrium too.
-Each of these dynamics occurred more quickly for $\xi/\xi_0$, as approaches to equilibrium are more rapid for rare variants relative to common variants.
-Thus, despite the demographic change resulting in immediate decreases to $\xi/\xi_0$ and $\pi/\pi_0$, patterns of relative diversity in populations suffering a contraction eventually approached their expected higher equilibrium values under weakened BGS, with rates dependent on the frequency of the alleles being observed and the  magnitude of the population reduction. 
-This was evident from the fact that the final $\pi/\pi_0$ values for models 2 and 3 were
-Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency bins of the SFS more than rare ones [57], any signal using rare frequency bins will be inherently more difficult to capture across differing magnitudes of BGS. However, more extensive simulations may help to uncover such patterns.
-Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency
-bins of the SFS more than rare ones [57], any signal using rare
-frequency bins will be inherently more difficult to capture across
-differing magnitudes of BGS. However, more extensive simulations may
-help to uncover such patterns.
-
+Overall, then, we find that theoretical models of population demographic change or selection alone are insufficient to predict changes in diversity when both processes are at play. 
+Both $\pi/\pi_0$ and $\xi/\xi_0$ show initial changes that often conflict with predictions from equilibrium models of BGS, reflecting instead the effects of rapid demographic change.
+But the rate at which diversity patterns begin to exhibit the impact changes in the efficacy of natural selection varies, differeing between $\pi/\pi_0$ and $\xi/\xi_0$ and depending on the effects of demography and BGS on the rate of drift and thus the timesacle over which changes can be observed.
+And although we have simulate under a single combined distribution of effect sizes for new mutations (see Methods), this distribution will also play an important role in determining the threshold above which new mutations are efficiently removed by selection.
+In practice, it will be difficult to know any of these feature in empirical data, and thus simple predictions --- for example that a botteleneck will reduce the efficact of natural selection and lead to increases in $\pi/\pi_0$ --- are likely to be difficult to make with much accuracy.
 
 \subsection{Comparisons to empirical data}
 
