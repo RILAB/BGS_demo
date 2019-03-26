@@ -27,10 +27,10 @@
 
 \usepackage{hyperref}
 
-\title{The chronology of linked selection in nonequilibrium populations}
+\title{The temporal dynamics of background selection in non-equilibrium populations}
 
 \author[$\S$,a]{Raul Torres}
-\author[$\ast$,a]{Markus Stetter}
+\author[$\ast$,a]{Markus G Stetter}
 \author[$\dagger$,1]{Ryan Hernandez}
 \author[$\ddagger$,1]{Jeffrey Ross-Ibarra}
 
@@ -315,7 +315,8 @@ This framework also helps explain the slow changes observed in expanding populat
 Because singleton variants represent very recent mutations, changes in $\xi/\xi_0$ responded quickly to changes in $N_e$.  
 In our simple expansion model, for example, while $\pi/\pi_0$ never stops increasing, we see a relatively rapid increase in $\xi/\xi_0$, followed by a decrease as a larger population size increases the efficacy of selection against new deleterious mutants. 
 And while theoretical predictions for $\xi/\xi_0$ are not straihtforward \jri{this true? can we cite anyone?}, singleton diversity in the simple expansion model quickly plateaus at a new value below that of the ancestral population, consistent with having reached a new equilibrium value.
-%Since $\xi/\xi_0$ is already less affected (and, thus, closer to 1) than $\pi/\pi_0$ because BGS perturbs common frequency bins of the SFS more than rare ones [57], any signal using rare frequency bins will be inherently more difficult to capture across differing magnitudes of BGS. However, more extensive simulations may help to uncover such patterns.
+However, signals using rare frequency bins such as $\xi$ are inherently more difficult to capture, partly because it is less affected than $\pi$ because BGS perturbs common frequency bins of the SFS more than rare ones [57].
+In addition, we observe much higher variance  for $\xi/\xi_0$ compared to $\pi/\pi_0$ due to the smaller number of sites contributing to $\xi$. 
 
 Overall, then, we find that theoretical models of population demographic change or selection alone are insufficient to predict changes in diversity when both processes are at play. 
 Both $\pi/\pi_0$ and $\xi/\xi_0$ show initial changes that often conflict with predictions from equilibrium models of BGS, reflecting instead the effects of rapid demographic change.
@@ -339,207 +340,10 @@ While there are a number of challenges associated with accurate estimation of hi
 For example, under the bottleneck-expansion models of Figure \ref{fig:3new}, sampling in the present (generation 0) returns results similar to those seen in maize, with $\pi/\pi_0$ higher than a constant-size reference population but $\xi/\xi_0$ showing lower values due to the increased efficacy of selection in the expanding population.
 Yet, if a sample was taken $\approx -0.8N_{anc}$ - $-0.6N_{anc}$ generations in the past for model 5 or 7, they would reveal the observed pattern in humans, with a lower $\pi/\pi_0$ but a higher $\xi/\xi_0$, reflecting the impacts of a recent bottleneck. Indeed, in our simulations of demographic models with a short time span (models 9-12), we also observe these results when sampling in the present (Figure \ref{fig:S912}).
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Here be dragons}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%behavior of $\pi/\pi_0$ and $\xi/\xi_0$ in simple demographic models
-%models2-3
-%These patterns were made evident when observing the more rapid relative decrease in diversity in our selection models with BGS versus neutrality.
-% When compared to their initial equilibrium starting points, $\pi$ under BGS suffered faster rates of loss compared to the neutral case for both models (Figure S9), with the fastest rates of loss accompanying larger reductions in $N_e$ (i.e., model 3).
-%Importantly, these results demonstrated that classical models that predict the impact of BGS on $\pi/\pi_0$, such as the Nordborg model, implicitly assume an equilibrium population at  mutation-selection balance [58] and are inappropriate for predicting true patterns of genetic diversity for populations that have udnergone recent size changes.
-
-%model4
-
-%The more sensitive and rapid response to population increase under BGS
-%recapitulated the faster approaches to equilibrium that were exhibited
-%in the contraction models. Intuitively, these faster approaches to new
-%equilibrium levels under BGS in response to size changes make sense if
-%we consider the fact that the distance between initial and final
-%equilibrium diversity levels for both $\pi$ and $\xi$ are closer to one another
-%under BGS when compared to neutrality (Figure S6; Table 2-3). This
-%provided a potential explanation for why we observed the specific
-%dynamics of $\pi/\pi_0$ immediately following a size change.
-%This argument likely does not hold for model 4 because, due to its
-%higher $N_e$, it is unlikely that equilibrium has
-%yet been reached. However, the observation of an increase in
-%$\pi/\pi_0$ for model 4 did provide supporting evidence that a
-%faster approach to equilibrium under BGS still existed under an
-%expansion model. Indeed, moderl 4 $\pi$ under BGS changed more quickly than
-%under neutrality (Figure S9). Presumably, this also indicates that $\pi$
-%under BGS will reach a new equilibrium first, at which point
-%$\pi/\pi_0$ will begin a downward trajectory in response to $\pi$
-%continuing to increase under neutrality but $\pi$ under BGS remaining at a
-%constant equilibrium. This is a likely outcome if the qualitative
-%changes in $\xi/\xi_0$ foreshadow the future dynamics of
-%$\pi/\pi_0$. The end result would also include a decrease in
-%$\pi/\pi_0$ relative to its initial starting point, with
-%$\pi/\pi_0$ eventually reaching a value close to its
-%expectation (Figure 2; dotted lines). Although we foresee no reason why
-%this prediction should not hold true, more extensive simulations will be
-%necessary to confirm this.
-
-
-% relatively higher than its initial value (Figure S8). This caused the
-% elevated $\xi/\xi_0$ exhibited in the final generation of
-% models 9-12 (Figure S3).
-
-% Because the history of models 9-12 only lasted 0.1
-% $N_{anc}$ generations, we also observed much more
-% limited dynamics of $\pi/\pi_0$ and $\xi/\xi_0$.
-% Specifically, $\pi/\pi_0$ did not recover above its initial
-% starting point by the final generation and $\xi/\xi_0$ did not
-% decrease in response to the population expansion, but rather continued
-% to remain elevated (Figure S3). These features are important because
-% they demonstrated that qualitatively similar demographic events, such as
-% the bottleneck-expansion model shared by models 5-8 and 9-12, can yield
-% opposite trends in statistics used as proxies for measuring the
-% intensity of BGS. Thus, the resulting effects on patterns of relative
-% diversity under BGS depend on how far removed the point of observation
-% is from a particular demographic event. Such patterns also help to
-% reconcile the qualitatively different observations yielded by previous
-% studies [20,51] (discussed further below).
-
-
-% Recently, two empirical investigations into the joint impacts of
-% demography and selection at linked sites in the context of BGS yielded
-% interesting and intuitive, albeit contradictory, observations.
-% Beissinger et al. [20] conducted a study across 36 samples from
-% maize and its wild progenitor teosinte. They found that patterns of
-% relative genetic diversity (i.e., $\pi/\pi_0$) across regions
-% experiencing linked selection in maize, which underwent a demographic
-% bottleneck during domesticaiton, were higher than in teosinte. They
-% attributed this to the historically larger $N_e$ of
-% teosinte, which led to more efficient natural selection and thus a
-% greater impact of BGS on neutral diversity. However, the contemporary
-% population size of maize, a staple food crop grown world-wide, is now
-% much larger than teosinte and should be experiencing stronger selection
-% in its recent history. Supporting this hypothesis, relative singleton
-% density of neutral sites in maize, which should reveal more recent
-% signals of evolutionary history, was lower compared to teosinte.
-% However, Torres et al. 2018 [51] revealed opposite patterns in
-% humans. There, through an analysis of over 2,500 human genomes, they
-% observed that relative genetic diversity ($\pi/\pi_0$) was
-% lower in non-Africans, a population that has undergone a series of
-% extensive population bottlenecks and exhibits a low long-term
-% $N_e$, when compared to Africans. Additionally,
-% relative singleton density was also higher in non-Africans. In
-% conclusion, the authors attributed these patterns to a higher
-% sensitivity to demography and drift in regions of selection at linked
-% sites, thus yielding lower relative diversity in bottlenecked
-% populations. They also concluded that the greater long-term
-% $N_e$, and thus more effective purifying selection
-% and greater BGS, of Africans has led to their observed lower relative
-% singleton density.
-
-% While these patterns observed in maize and humans are seemingly in
-% disagreement, important demographic details, such as the length of the
-% population bottleneck and the time since the post-bottleneck population
-% expansion began, may also be significant contributors to these results.
-% As our simulations demonstrated, it is possible for two qualitatively
-% similar demographic histories to yield opposite patterns if the window
-% of time in which those patterns are observed are different. In the case
-% of maize compared to teosinte, observations are being made at a time in
-% which BGS is operating less effectively on removing average pairwise
-% diversity (due to its lower long-term $N_e$) but
-% more effectively on singletons (due to its higher contemporary
-% $N_e$). But if this population had been sampled more
-% closely to its population bottleneck event, observations of relative
-% diversity may have been more aligned with what is currently observed for
-% humans. The approximate number of generations removed from the
-% domestication bottleneck event for maize is about 15,000 generations
-% [20]. For humans, the approximate number of generations removed from
-% the out-of-Africa bottleneck event is only 6,000 generations [51].
-% Therefore, it is not unreasonable to suspect that these different
-% timespans contribute to the qualitatively different observations now
-% being observed.
-
-% Importantly, these two studies provide striking examples of the
-% importance of considering the impact of demography and time on extant
-% patterns of diversity to avoid mis-attributing the underlying forces
-% driving those patterns in regions experiencing selection at linked
-% sites. Since the null expectation of a natural population should be that
-% it is not at demographic equilibrium [59], alternative hypothesis
-% testing on selection at linked sites should also include the effects of
-% non-equilibrium demography and how they affect patterns through time.
-% However, in the specific context of maize and humans, we also note that
-% other details, such as the periodic bottlenecks suffered by non-Africans
-% (which may have further accelerated drift) and the differences among the
-% distribution of fitness effects for these two species, are equally
-% important to consider and warrant further investigation as well.
-
-% Recent model development incorporating demography into models of BGS
-% holds promise on generating demographically aware models on the effects
-% of selection at linked sites in populations. In particular, results from
-% Zeng 2013 [48], which formulated a simulation-based structured
-% coalescent model of BGS with demography, also showed that demography can
-% perturb levels of genetic diversity under BGS through time. In a
-% separate study, an analytical model which is capable of incorporating
-% changing demography was formulated and will prove more ideal for
-% performing inference of selection at linked sites in dynamic populations
-% [49]. Both of these models, though, are limited in their ability to
-% accurately predict the effects of selection at linked sites when
-% mutation-selection balance breaks down, which typically occurs when the
-% population scaled selection coefficient, $\gamma$, approaches 1. In
-% general, the deterministic approximation implicit for models of BGS may
-% not be suitable for $\gamma \leq 3$ [56]. During the course of a
-% bottleneck, as we have simulated here, $\gamma$ is likely to fall below
-% these thresholds and patterns of diversity may be more strongly affected
-% by other processes such as genetic drift or the ``interference
-% selection'' regime described in Good et al. 2014 [60]. For the case
-% in which $s$ is drawn from a skewed distribution, such as the gamma
-% distribution, the deterministic approximation is further likely to break
-% down when $s$ is small. We attempt to limit these specific issues
-% in the Nordborg model by simply truncating $s$ so that predictions
-% better match observed levels of BGS for various population sizes
-% (albeit, under the additional assumption of demographic equilibrium).
-% This simplistic approach may be suitable for other models of BGS, but as
-% our results showed, it will likely provide only a coarse estimate for
-% the prediction of diversity under BGS (Figure S21).
-
-% \hyperdef{}{ux5f30j0zll}{}{}Finally, our results extend the recent
-% debate on patterns of diversity in selected sites in non-equilibrium
-% populations (especially in humans [61--64]) to patterns of diversity
-% across neutral sites. For the specific case of selected sites, sites
-% under strong selection are more sensitive to demographic change and will
-% reach new equilibrium frequency levels more quickly than neutral sites
-% or weakly selected sites [65--67]. As we have shown here in the
-% context of neutral sites, because the underlying equilibrium frequency
-% of neutral sites depends on the strength of selection at linked sites,
-% demographic change will also result in distinct responses to their
-% change in frequency. In addition, the rate of change will also depend on
-% which bins of the SFS diversity is being measured with. Together, this
-% results in the complex change of $\pi/\pi_0$ and
-% $\xi/\xi_0$ through time that we observed from our simulations.
-% This insight should provide caution, however, for studies attempting to
-% uncover the action of natural selection by comparing sites within the
-% genome since, even when controlling for the strength of BGS itself,
-% frequencies of neutral sites may still be at different relative levels
-% depending on the recent demographic history of the population.
-
-
-
-% Thus, the
-% impact of population contractions on mitigating the effects of BGS
-% resulted in larger shifts of $\pi/\pi_0$ in regions of the
-% genome already under the strongest amount of BGS.
-% This makes sense since regions farther removed from loci under purifying selection (i.e., under weaker effects of BGS) have values of $\pi/\pi_0$ closer to the neutral expectation of 1.
-% Thus, the upper bound for change in $\pi/\pi_0$ will be more limited there compared to regions more
-% proximal to a selected locus.
-% This provided further evidence for the dominant effects of
-% drift and allelic loss on driving the initial decrease in
-% $\pi/\pi_0$ immediately following a population contraction,
-% which should have unbiased effects across all bins within the trough.
-% During the subsequent recovery to higher values of $\pi/\pi_0$, we saw smaller differences arise
-% between the nearest and farthest 10 kb bins, demonstrating the expected
-% weakening effects of BGS following a population decline. This weakening
-% of the trough structure was also most apparent for model 3, with
-% patterns of $\pi/\pi_0$ appearing essentially flat across the
-% 200 kb region in the final generation (Figure S11).
-
 \section{Acknowledgments}
 
+MGS and JR-I would like to acknoweledge funding from NSF Plant Genome Grant 1238014.
+We would also like to thank Felix Andrews for statistical advice, although we did not follow it.
 
 \bibliography{example-bibliography}
 
