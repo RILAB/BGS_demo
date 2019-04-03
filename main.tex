@@ -29,15 +29,16 @@
 
 \title{The temporal dynamics of background selection in non-equilibrium populations}
 
-\author[$\S$,a]{Raul Torres}
-\author[$\ast$,a]{Markus G Stetter}
-\author[$\dagger$,1]{Ryan Hernandez}
-\author[$\ddagger$,1]{Jeffrey Ross-Ibarra}
+\author[1,$\ast$]{Raul Torres}
+\author[2,$\ast$]{Markus G Stetter}
+\author[3,4]{Ryan D Hernandez}
+\author[5]{Jeffrey Ross-Ibarra}
 
-\affil[$\S$]{Biomedical Sciences Graduate Program, University of California San Francisco, San Francisco, CA, USA}
-\affil[$\ast$]{Botanical institute, University of Cologne, Cologne, Germany}
-\affil[$\dagger$]{Genome Quebec Innovation Center, McGill University, Montreal, Canada}
-\affil[$\ddagger$]{Dept. of Evolution and Ecology, Genome Center, and Center for Population Biology, University of California, Davis, CA, USA}
+\affil[1]{Biomedical Sciences Graduate Program, University of California San Francisco, San Francisco, CA, USA}
+\affil[2]{Botanical institute, University of Cologne, Cologne, Germany}
+\affil[3]{Department of Bioengineering and Therapeutic Sciences, University of California San Francisco, San Francisco, CA, USA}
+\affil[4]{Department of Human Genetics and Genome Quebec Innovation Center, McGill University, Montreal, Canada}
+\affil[5]{Department of Human Genetics of Evolution and Ecology, Genome Center, and Center for Population Biology, University of California, Davis, CA, USA}
 
 \keywords{demography, background selection, linked selection}
 
@@ -68,11 +69,11 @@ Most notably, our results highlight that classical models of BGS are poorly suit
 \thispagestyle{firststyle}
 %\firstpagefootnote
 \correspondingauthoraffiliation{
-Dept. of Evolution and Ecology, University of California, Davis, CA, USA
+Department of Evolution and Ecology, University of California, Davis, CA, USA
 E-mail: rossibarra@ucdavis.edu \\
-Genome Quebec Innovation Center, McGill University, Montreal, Canada
-E-mail: ryan@McGill.edu\\
-\textsuperscript{a} co-first authors
+Department of Human Genetics, McGill University, Montreal, Canada
+E-mail: ryan.hernandez@me.com\\
+\textsuperscript{a} Authors contributed equally.
 }
 \vspace{-11pt}%
 
@@ -98,11 +99,12 @@ As a result, large contemporary populations may still yield patterns of low aver
 In humans, this is clearly evident in European and Asian populations due to the out-of-Africa bottleneck \citep{10002015global}.
 
 Because selection at linked sites and demography are both pervasive forces across a multitude of species, the characterization of how these two forces interact with one another is necessary in order to develop a full picture on the determinants of neutral genetic diversity.
-The efficiency of natural selection scales proportionally with \textit{$N_e$} and the impact of selection at linked sites on neutral diversity is likely to be greater in larger populations and lower in smaller populations \citep{kaplan1989hitchhiking, cutter2013genomic, corbett2015natural} (although the rate of change for lowered diversity may diminish as populations reach larger and larger sizes \citep{gillespie2001population, santiago2016joint}).
+The efficiency of natural selection scales proportionally with \textit{$N_e$} and the impact of selection at linked sites on neutral diversity is likely to be greater in larger populations and lower in smaller populations (although the rate of change for lowered diversity may diminish as populations reach larger and larger sizes; \citet{kaplan1989hitchhiking, cutter2013genomic, corbett2015natural, gillespie2001population, santiago2016joint}).
 Further, demographic changes can also increase (in the case of bottlenecks) or decrease (in the case of expansions) the rate of drift.
 It is therefore plausible that the rate at which diversity at a neutral locus is perturbed by selection at linked sites could be highly dependent on both the current as well as long-term $N_e$ of the population.
 This competition between the strength of selection at linked sites (which increases with N) and genetic drift (which decreases with N) may be a key contributor to the limited range of diversity observed among species  despite much larger observed differences in census size \citep{gillespie2001population, corbett2015natural, santiago2016joint}.
-However, selection at linked sites alone may not be sufficient to explain the observed discrepancy between observed diversity and census populations sizes \citep{coop2016does}, and the action of both demography and selection at linked sites in concert may provide a better model.
+However, selection at linked sites alone may not be sufficient to explain the observed discrepancy between observed diversity and census populations sizes \citep{coop2016does}, and the action of both demography and selection at linked sites in concert may provide a better model. 
+Moreover, the heterogeneous structure of selection at linked sites across the genome may yield different responses to demography and population splits through time and their resulting effects on patterns of differentiation and divergence also remain largely unexplored \citep{burri2017interpreting}.
 
 Many models of selection at linked sites were also formulated with the assumption that the population is large enough (or selection strong enough) such that mutation-selection balance is maintained \citep{charlesworth1993effect, zeng2013coalescent, nicolaisen2013distortions}.
 However, non-equilibrium demographic change may break such assumptions and forces other than selection may drive patterns of variation in regions experiencing selection at linked sites.
@@ -143,7 +145,7 @@ After the burn-in period, we measured genetic diversity ($\pi$) and singleton de
 We measured $\pi$ and $\xi$ for each demographic model by taking the mean of these values across each set of 5,000 replicate simulations.
 For neutral simulations, we annotated $\pi$ and $\xi$ as $\pi_0$ and $\xi_0$, respectively.
 We took the ratio of these statistics (i.e., $\pi/\pi_0$ and $\xi/\xi_0$) in order to measure the relative impact of BGS within each demographic model.
-We bootstrapped the diversity statistics by sampling with replication the 5,000 simulated replicates of each demographic model to generate a new set of 5,000 simulations, taking the mean of $\pi$ and $\xi$ across each new bootstrapped set.
+We bootstrapped the diversity statistics by sampling with replacement the 5,000 simulated replicates of each demographic model to generate a new set of 5,000 simulations, taking the mean of $\pi$ and $\xi$ across each new bootstrapped set.
 We conducted 10,000 bootstrap iterations and generated confidence intervals from the middle 95\% of the resulting bootstrapped distribution.
 
 \subsection{Calculations of expected BGS}
@@ -157,7 +159,7 @@ This resulted in the following modified equation:
     \frac{N_e}{N}\equiv\frac{\pi}{\pi_0}=f(U_T,\alpha_T,\beta_T)\times f(U_B,\alpha_B,\beta_B) \\
 \end{equation*}
     
-The left side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{torgerson2009evolutionary} (represented by $f(U_T,\alpha_T,\beta_T)$) and the right side of the equation models the effects of BGS according to the gamma DFE inferred by \citet{boyko2008assessing} (represented by $f(U_b,\alpha_B,\beta_B)$).
+The first term of the equation ($f(U_T,\alpha_T,\beta_T)$) models the effects of BGS due to selection at non-coding sites according to the gamma DFE inferred by \citet{torgerson2009evolutionary}, and the second term of the equation ($f(U_b,\alpha_B,\beta_B)$) models the effects of BGS due to selection on coding sites according to the gamma distribution of fitness effects (DFE) inferred by \citet{boyko2008assessing}.
 Each of these is modeled following:
 
 \begin{equation*}
@@ -167,20 +169,15 @@ Each of these is modeled following:
     \end{align}
 \end{equation*}
     
-  %  exp\left( -\frac{U_B}{2R}\int^{\infty}_C\frac{1}{s}\bigg\{\int_0^R\frac{dz}{[1+r(z)(1-s)/s]^2}\bigg\}\Gamma(s,\alpha_B,\beta_B)ds \right)
-  %  \end{aligned}
-%\end{eqnarray*}
-
 Here, $R$ is the total length of the selected locus in bp, $U$ is the total deleterious mutation rate across the selected locus, $r(z)$ is the genetic map distance between a neutral site and a deleterious mutation, and $s$ is the selection coefficient of a deleterious mutation.
 
-Because $N_e$ is not explicitly included in this model of BGS, we followed previous work \citep{charlesworth2012role, comeron2014background} in truncating selection at some value $C$,
-such that $C = \gamma/2N_e$ (represented in the integral $\int^{\infty}_C$).
-Here, $C$ represents the minimum selection coefficient which is treated as deleterious for the model and $\gamma$ represents the population scaled selection coefficient ($\gamma = 2N_es$) that determines the value of $C$.
-Thus, this step excludes effectively neutral mutations from the model that should not contribute to BGS.
+Because $N_e$ is not explicitly included in this model of BGS, we followed previous work \citep{charlesworth2012role, comeron2014background} in truncating selection at some value $C$ (represented in the integral $\int^{\infty}_C$).
+Here, $C$ represents the minimum selection coefficient ($s$) that is treated as deleterious for the model.
+This step effectively excludes neutral mutations from the model that should not contribute to BGS, and can be modulated to mimic small or large populations (by increasing or decreasing $C$, respectively; Figure \ref{fig:nordborgsims}).
 This truncation step also affects the values used for $U$ in the above equation, resulting in specific values of $U$ for each DFE.
-We simulated different population sizes under our BGS simulation model to see how well the modified Nordborg model fit populations of different $N_e$ for different values of $\gamma$ (Figure \ref{fig:nordborgsims}).
-We used a $\gamma = 0.15$ because this provided the best estimate of $\pi/\pi_0$ for the starting $N_e$ of our demographic models (i.e., $N_e = 20,000$).
-While this value provides a coarse estimate for the effects of BGS on $\pi/\pi_0$ for a particular $N_e$, it will overestimate the effects of BGS for smaller $N_e$ (Figure \ref{fig:nordborgsims}).
+We simulated different population sizes to equilibrium under our BGS simulation model to see how well the modified version of the classic model fit populations of different $N_e$ for different values of $C$ (Figure \ref{fig:nordborgsims}).
+We used $2N_e C = 0.15$ because this provided the best estimate of $\pi/\pi_0$ for the starting $N_e$ of our demographic models (i.e., $N_e = 20,000$).
+While this value provides a coarse estimate for the effects of BGS on $\pi/\pi_0$ for a particular $N_e$, it will overestimate the effects of BGS for smaller $N_e$ and potentially underestimate the effects of BGS for larger $N_e$ (Figure \ref{fig:nordborgsims}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -245,7 +242,7 @@ Again changes in $\pi/\pi_0$ contrast with the expectations of the classic model
 But while both $\pi/\pi_0$ and $\xi/\xi_0$ remain elevated in our simple bottleneck models, $\xi/\xi_0$ in the bottleneck-expansion models shifts direction during the course of the expansion and begins to decline, eventually reaching values below that of the equilibrium population.
 Though the trajectories of $\pi/\pi_0$ and $\xi/\xi_0$ were truncated for models in which the bottleneck occurred in the recent  past (models 9-12; 0.1 $N_{anc}$ generations), they nonetheless appeared to behave qualitatively similar to ancient bottleneck models (Figure \ref{fig:S912}). Notably, for these models, the ending values of $\xi/\xi_0$ and $\pi/\pi_0$ were in the opposite direction relative to model 1 when compared to the models with longer demographic histories.
 
-\begin{figure}[]
+\begin{figure}[t!]
 \includegraphics[width=\linewidth]{figures/fig3newclean.pdf}
 \caption{Relative singleton density ($\xi/\xi_0$) and relative diversity ($\pi/\pi_0$) across time for demographic models 1 and 5-8.
 The top panel shows each demographic model; time proceeds forward from left to right and is scaled by the $N_e$ of the population at the initial generation ($N_{anc}$; 20,000 individuals).
@@ -258,18 +255,18 @@ Envelopes are 95\% CIs calculated from 10,000 bootstraps of the original simulat
 \subsection{Patterns of diversity across the 200 kb neutral region}
 
 We also measured patterns of $\pi/\pi_0$ across time for the entire 200 kb neutral region.
-Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the focal locus under selection (model 5 shown in Figure \ref{fig:200kb}, see Figure \ref{fig:all200} for all models). Change in $\pi/\pi_0$ over time generally followed patterns observed in the neutral window closest to the selected region. In all of our ancient bottleneck models (models 2-3, 5-8), for example, we see a decline in $\pi/\pi_0$ across the entire region followed by an increase to levels higher than in the ancestral population. For recent bottlenecks (models 9-12) we see a consistent decline with no recovery and in our simple expansion model (model 4) $\pi/\pi_0$ increases monotonically through time.
+Doing so showed the characteristic ``trough'' structure of increasing relative diversity as a function of genetic distance from the deleterious locus (model 5 shown in Figure \ref{fig:200kb}, see Figure \ref{fig:all200} for all models). Change in $\pi/\pi_0$ over time generally followed patterns observed in the neutral window closest to the selected region. In all of our ancient bottleneck models (models 2-3, 5-8), for example, we see a decline in $\pi/\pi_0$ across the entire region followed by an increase to levels higher than in the ancestral population. For recent bottlenecks (models 9-12) we see a consistent decline with no recovery and in our simple expansion model (model 4) $\pi/\pi_0$ increases monotonically through time.
 
 Yet, these general patterns obscure more subtle changes in the slope of $\pi/\pi_0$ with increasing distance from the selected region. In models with a stronger bottleneck (models 3, 6 and 8), where we expect the efficacy of selection to be most affected, we see that the slope $\pi/\pi_0$ flattens over time, completely erasing the trough of diversity in the most extreme case without a recovery (model 3). 
 
 
-\begin{figure}[]
+\begin{figure}[t!]
 \includegraphics[width=\linewidth]{figures/FigS13.pdf}
-\caption{Relative diversity ($\pi/\pi_0$) and singleton density ($\xi/\xi_0$) through time for demographic model 5 measured across a neutral 200 kb region under the effects of BGS. The genetic distance of each 10 kb bin from the selected locus is indicated on the x-axis of the bottom two panels. Each line measuring $\pi/\pi_0$ and $\xi/\xi_0$ in the bottom panels represents one of the 401 discrete generations sampled from the demographic model; colors follow the demographic model in the top panel (time is scaled as in Figures \ref{fig:S6}-\ref{fig:3new}) and in the figure legend. Multiple plots are given in order to prevent overlap of the measurements between generations (see legend for specific generations covered in each plot). Blue dashed lines and red dashed lines indicate the first generation and last generation measured within each plot.}
+\caption{Temporal and spatial dynamics of relative diversity ($\pi/\pi_0$) and singleton density ($\xi/\xi_0$) under demographic model 5 across a neutral 200 kb region. The genetic distance of each 10 kb bin from the selected locus is indicated on the x-axis of the bottom panels. Each line measuring $\pi/\pi_0$ and $\xi/\xi_0$ in the bottom panels represent one of the 401 discrete generations sampled from the demographic model; colors follow the demographic model in the top panel (time is scaled as in Figures \ref{fig:S6}-\ref{fig:3new}) and in the figure legend. Multiple plots are given in order to prevent overlap of the measurements between generations (see legend for specific generations covered in each plot). Blue dashed lines and red dashed lines indicate the first and last generation measured within each plot (respectively).}
 \label{fig:200kb}
 \end{figure}
 
-Finally, while  $\xi/\xi_0$ across the regions also largely followed patterns seen in the neutral window most proximal to the selected locus, a closer look across the 200 kb regions of most models yielded no clear patterns. 
+Finally, while $\xi/\xi_0$ across the region largely followed patterns seen in the neutral window most proximal to the selected locus, a closer look across the 200 kb regions of most models yielded no clear patterns. 
 Troughs were slightly apparent for the final generations of some models (models 5 and 7), but the stochasticity among 10 kb windows for $\xi/\xi_0$ swamped any other patterns that might otherwise be evident.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -283,7 +280,7 @@ We know, for example, the impact of simple bottleneck and growth models such as 
 Theory also offers clear direction on the long-term effects of decreases in effective population size on the efficacy of natural selection \citex{}.
 Likewise, now classic theory on background selection provides a solid theoretical expectation for the effects of linked selection on diversity in populations at demographic equilibrium \citep{inordborg1996effect}.
 
-Despite these efforts, there are no formal theoretical treatments describing expected patterns of the interaction of demography and linked selection, and only one limited simulation attempt \citex{comeron}.
+Despite these efforts, there are no formal theoretical treatments describing expected patterns of the interaction of demography and linked selection, and only one limited simulation attempts \citex{comeron}.
 Notably, there remains substantial confusion in empirical population genetic analyses, where authors often equate long-term predictions of changes in effective populations size on the efficacy of natural selection to short-term responses under non-equilibrium demography.
 Here, we use exhaustive simulations and analysis of different demographic models with and without background selection to show that predictions from such equilibrium models generally fail to hold up over shorter time scales, and that the predicted impacts of the combined effects of demography and linked selection depend strongly on the details of the demographic model as well as the timing of sampling.
 
@@ -300,29 +297,28 @@ These effects are presumably why we see the rate of increase of $\pi/\pi_0$ slow
 Changes in the efficacy of selection are also readily observed in comparisons of diversity across neutral windows varying in recombination distance from the selected region \jri{cite figures}.
 Diversity in the ancestral population increases with  distance from the selected regions as expected under classical models of BGS at equilibrium \citex{}. 
 But while the slope of this relationship remains constant in the generations initially following population size change in our simple bottleneck models, it begins to flatten as the lower effective population size changes in the efficacy of natural selection cause the slope to flatten  \jri{cite fig}.
-\jri{where do we discuss fact they don't perfectly hit equilibrium expectations, and that this may be because of our $\gamma$ threshold}
+%\jri{where do we discuss fact they don't perfectly hit equilibrium expectations, and that this may be because of our $\gamma$ threshold}
 \jri{can we connect the inflection points of change in Ne? can we say e.g. that the inflection point happens after $N_{bottleneck}$ gens, then we see increase?}
 %1) time 2) However, we note that this expectation underestimated $\pi/\pi_0$ for model 3 because the threshold of $s < 0.15/2N_e$ was likely not conservative enough to ignore deleterious mutations that behave neutrally under the low $N_e$ size of 400 for that model.
 
-The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ [56], though we caution that effects of BGS on the SFS cannot be simplified to this extent [57]. \jri{Raul please fix citations?}
+The diversity-reducing effects of BGS have often been modeled as a reduction in $N_e$ \citep{charlesworth1993effect}, though we caution that effects of BGS on the SFS cannot be simplified to this extent \citep{cvijovic2018effect}.
 Like a reduction in $N_e$, however, BGS exacerbates the stochastic process of drift.
 And because the relevant timescale for allele frequency evolution is scaled by the rate of drift \citex{}, both the reduction and recovery of $\pi/\pi_0$ to equilibrium levels happen over fewer generations in populations with stronger bottlenecks and in regions impacted by BGS.
 We see this borne out in comparisons of models with stronger \jri{figure} or more sustained \jri{figure} bottlenecks, as well as comparisons of models with BGS to their equivalent neutral scenarios \jfir{figure}.
 %For example, the inflection point at which $\pi$ under BGS surpassed $\pi$ under neutrality occurred at -0.305 and -0.848 $N_{anc}$ generations for models 7 and 8, respectively (Figure S7). For models 5 and 6, these inflection points occurred later in time at -0.235 and -0.785 $N_{anc}$ generations, respectively. Further, the final $\pi/\pi_0$ values for models 7 and 8 were 0.643 and 0.887 but for models 5 and 6, they were only 0.631 and 0.860. Thus, the sustained lower $N_e$ of models 7 and 8 aided in accelerating the approach to the new equilibrium established by population reduction. 
-This framework also helps explain the slow changes observed in expanding populations \jri{cite figures}, as increases in the effective size attenuate the rate of drift.
-\jri{do we need concrete numbers here?} 
+This framework also helps explain the slow changes observed in expanding populations , as increases in the effective size attenuate the rate of drift.
 
 Because singleton variants represent very recent mutations, changes in $\xi/\xi_0$ responded quickly to changes in $N_e$.  
 In our simple expansion model, for example, while $\pi/\pi_0$ never stops increasing, we see a relatively rapid increase in $\xi/\xi_0$, followed by a decrease as a larger population size increases the efficacy of selection against new deleterious mutants. 
-And while theoretical predictions for $\xi/\xi_0$ are not straihtforward \jri{this true? can we cite anyone?}, singleton diversity in the simple expansion model quickly plateaus at a new value below that of the ancestral population, consistent with having reached a new equilibrium value.
-However, signals using rare frequency bins such as $\xi$ are inherently more difficult to capture, partly because it is less affected than $\pi$ because BGS perturbs common frequency bins of the SFS more than rare ones [57].
+And while theoretical predictions for $\xi/\xi_0$ are not straightforward, singleton diversity in the simple expansion model quickly plateaus at a new value below that of the ancestral population, consistent with having reached a new equilibrium value.
+However, signals using rare frequency bins such as $\xi$ are inherently more difficult to capture, partly because it is less affected than $\pi$ since BGS perturbs common frequency bins of the SFS more than rare ones \citep{cvijovic2018effect}.
 In addition, we observe much higher variance  for $\xi/\xi_0$ compared to $\pi/\pi_0$ due to the smaller number of sites contributing to $\xi$. 
 
 Overall, then, we find that theoretical models of population demographic change or selection alone are insufficient to predict changes in diversity when both processes are at play. 
 Both $\pi/\pi_0$ and $\xi/\xi_0$ show initial changes that often conflict with predictions from equilibrium models of BGS, reflecting instead the effects of rapid demographic change.
 But the rate at which diversity patterns begin to exhibit the impact changes in the efficacy of natural selection varies, differing between $\pi/\pi_0$ and $\xi/\xi_0$ and depending on the effects of demography and BGS on the rate of drift and thus the timescale over which changes can be observed.
-And although we have simulate under a single combined distribution of effect sizes for new mutations (see Methods), this distribution will also play an important role in determining the threshold above which new mutations are efficiently removed by selection.
-In practice, it will be difficult to know any of these feature in empirical data, and thus simple predictions --- for example that a bottleneck will reduce the efficacy of natural selection and lead to increases in $\pi/\pi_0$ --- are likely to be difficult to make with much accuracy.
+Although we have simulated under a mixture distribution of selection coefficients for new mutations (see Methods), this distribution will also play an important role in determining the threshold above which new mutations are efficiently removed by selection.
+In practice, it will be difficult to know any of these features in empirical data, and thus simple predictions --- for example that a bottleneck will reduce the efficacy of natural selection and lead to increases in $\pi/\pi_0$ --- are likely to be difficult to make with much accuracy.
 
 \subsection{Comparisons to empirical data}
 
@@ -334,15 +330,27 @@ However, their analysis of $\xi/\xi_0$ found the opposite pattern --- stronger e
 
 Human demographic history appears at least qualitatively similar to that of maize, with a bottleneck associated with migration out of Africa followed by considerable recent population expansion \citep{tennessen2012evolution}.
 In spite of this, however, analysis of selection at linked sites in humans produced different results \citep{torres2018human}.
-The bottlenecked European populations were found to have lower $\pi/\pi_0$ but higher $\xi/\xi_0$ than African populations. The authors interpreted this as the effects of a demographic bottleneck being exacerbated in regions of BGS, leading to greater losses of diversity ($\pi$) in Europeans. However, the authors also concluded that the lowered $N_e$ resulting from the European bottleneck led to weaker effects of BGS overall, which were manifested in the higher observed values of $\xi/\xi_0$.
+The bottlenecked non-African populations were found to have lower $\pi/\pi_0$ but higher $\xi/\xi_0$ than African populations. The authors interpreted this as the effects of a demographic bottleneck being exacerbated in regions of BGS, leading to greater losses of diversity ($\pi$) in Europeans. However, the authors also concluded that the lowered $N_e$ resulting from the European bottleneck led to weaker effects of BGS overall, which were manifested in the higher observed values of $\xi/\xi_0$.
 
-While there are a number of challenges associated with accurate estimation of historical demography in empirical systems \citex{}, our models highlight the fact that results seen in both maize and humans are plausible under even relatively simple models that are broadly consistent with the dynamics of these two systems.
+While there are a number of challenges associated with accurate estimation of historical demography in natural and domesticated populations \citex{}, our models highlight the fact that results seen in both maize and humans are plausible under even relatively simple models that are broadly consistent with the dynamics of these two systems.
 For example, under the bottleneck-expansion models of Figure \ref{fig:3new}, sampling in the present (generation 0) returns results similar to those seen in maize, with $\pi/\pi_0$ higher than a constant-size reference population but $\xi/\xi_0$ showing lower values due to the increased efficacy of selection in the expanding population.
 Yet, if a sample was taken $\approx -0.8N_{anc}$ - $-0.6N_{anc}$ generations in the past for model 5 or 7, they would reveal the observed pattern in humans, with a lower $\pi/\pi_0$ but a higher $\xi/\xi_0$, reflecting the impacts of a recent bottleneck. Indeed, in our simulations of demographic models with a short time span (models 9-12), we also observe these results when sampling in the present (Figure \ref{fig:S912}).
 
+\section{Conclusions}
+
+Genetic diversity across the genome is determined by the complex interplay of mutation, demographic history, and the effects of both direct and linked natural selection. 
+While each of these processes is understood to a degree on its own, in many cases we lack either theory or sufficient empirical data to capture the effects of their interaction.
+
+Linked selection, in particular, is increasingly recognized as perhaps the primary determinant of patterns of diversity along a chromosome, but our ability to infer its impact is often complicated by changes in population size.
+Indeed, many authors make the simplifying assumption that linked selection in such non-equilibrium populations can be effectively modeled using classic theory and simply scaling the  effective population size $N_e$.
+Our extensive simulations show that this is not the case.
+
+We find that the relationship between linked selection and demographic change is complex, with short-term dynamics often qualitatively different from predictions under classic models.
+These results suggest that inferring the impact of population size change on linked selection should be undertaken with caution, and is only really possible with a thorough understanding of the demographic history of the populations of interest.
+
 \section{Acknowledgments}
 
-MGS and JR-I would like to acknoweledge funding from NSF Plant Genome Grant 1238014.
+MGS and JR-I would like to acknowledge funding from NSF Plant Genome Grant 1238014.
 We would also like to thank Felix Andrews for statistical advice, although we did not follow it.
 
 \bibliography{example-bibliography}
@@ -385,8 +393,8 @@ See Table \ref{table:params} for additional model parameters.}
 
 \begin{figure*}[t]
 \includegraphics[width=.9\linewidth]{figures/FigS21.pdf}
-\caption{Estimate of $\pi/\pi_0$ from the Nordborg model across different population sizes and different truncation thresholds on selection.
-Different $\gamma$ values used to truncate $s$ for the Nordborg model are shown in the legend ($2N_es \geq \gamma$).
+\caption{Estimate of $\pi/\pi_0$ from the classic model \citep{nordborg1996effect} across different population sizes and different truncation thresholds on selection.
+Different $\gamma$ values used to truncate selection ($C$) for the classic model are shown in the legend ($2N_eC \geq \gamma$).
 Black stars represent the observed $\pi/\pi_0$ from running simulations of BGS.}
 \label{fig:nordborgsims}
 \end{figure*}
